@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F43EBE229DF6CD900890425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE129DF6CD900890425 /* AppDelegate.swift */; };
+		8F43EBE429DF6CD900890425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE329DF6CD900890425 /* SceneDelegate.swift */; };
+		8F43EBE629DF6CD900890425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE529DF6CD900890425 /* ViewController.swift */; };
+		8F43EBE929DF6CD900890425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBE729DF6CD900890425 /* Main.storyboard */; };
+		8F43EBEC29DF6CD900890425 /* Cravin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBEA29DF6CD900890425 /* Cravin.xcdatamodeld */; };
+		8F43EBEE29DF6CDB00890425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBED29DF6CDB00890425 /* Assets.xcassets */; };
+		8F43EBF129DF6CDB00890425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */; };
+		8F43EBFC29DF6CDC00890425 /* CravinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBFB29DF6CDC00890425 /* CravinTests.swift */; };
+		8F43EC0629DF6CDC00890425 /* CravinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC0529DF6CDC00890425 /* CravinUITests.swift */; };
+		8F43EC0829DF6CDC00890425 /* CravinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F43EBF829DF6CDC00890425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F43EBD629DF6CD900890425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F43EBDD29DF6CD900890425;
+			remoteInfo = Cravin;
+		};
+		8F43EC0229DF6CDC00890425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F43EBD629DF6CD900890425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F43EBDD29DF6CD900890425;
+			remoteInfo = Cravin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F43EBDE29DF6CD900890425 /* Cravin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cravin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F43EBE129DF6CD900890425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F43EBE329DF6CD900890425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F43EBE529DF6CD900890425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F43EBE829DF6CD900890425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F43EBEB29DF6CD900890425 /* Cravin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cravin.xcdatamodel; sourceTree = "<group>"; };
+		8F43EBED29DF6CDB00890425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F43EBF029DF6CDB00890425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F43EBF229DF6CDB00890425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F43EBF729DF6CDC00890425 /* CravinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CravinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F43EBFB29DF6CDC00890425 /* CravinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinTests.swift; sourceTree = "<group>"; };
+		8F43EC0129DF6CDC00890425 /* CravinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CravinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F43EC0529DF6CDC00890425 /* CravinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinUITests.swift; sourceTree = "<group>"; };
+		8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F43EBDB29DF6CD900890425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBF429DF6CDC00890425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBFE29DF6CDC00890425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F43EBD529DF6CD900890425 = {
+			isa = PBXGroup;
+			children = (
+				8F43EBE029DF6CD900890425 /* Cravin */,
+				8F43EBFA29DF6CDC00890425 /* CravinTests */,
+				8F43EC0429DF6CDC00890425 /* CravinUITests */,
+				8F43EBDF29DF6CD900890425 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F43EBDF29DF6CD900890425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EBDE29DF6CD900890425 /* Cravin.app */,
+				8F43EBF729DF6CDC00890425 /* CravinTests.xctest */,
+				8F43EC0129DF6CDC00890425 /* CravinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F43EBE029DF6CD900890425 /* Cravin */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EBE129DF6CD900890425 /* AppDelegate.swift */,
+				8F43EBE329DF6CD900890425 /* SceneDelegate.swift */,
+				8F43EBE529DF6CD900890425 /* ViewController.swift */,
+				8F43EBE729DF6CD900890425 /* Main.storyboard */,
+				8F43EBED29DF6CDB00890425 /* Assets.xcassets */,
+				8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */,
+				8F43EBF229DF6CDB00890425 /* Info.plist */,
+				8F43EBEA29DF6CD900890425 /* Cravin.xcdatamodeld */,
+			);
+			path = Cravin;
+			sourceTree = "<group>";
+		};
+		8F43EBFA29DF6CDC00890425 /* CravinTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EBFB29DF6CDC00890425 /* CravinTests.swift */,
+			);
+			path = CravinTests;
+			sourceTree = "<group>";
+		};
+		8F43EC0429DF6CDC00890425 /* CravinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EC0529DF6CDC00890425 /* CravinUITests.swift */,
+				8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */,
+			);
+			path = CravinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F43EBDD29DF6CD900890425 /* Cravin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F43EC0B29DF6CDC00890425 /* Build configuration list for PBXNativeTarget "Cravin" */;
+			buildPhases = (
+				8F43EBDA29DF6CD900890425 /* Sources */,
+				8F43EBDB29DF6CD900890425 /* Frameworks */,
+				8F43EBDC29DF6CD900890425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cravin;
+			productName = Cravin;
+			productReference = 8F43EBDE29DF6CD900890425 /* Cravin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F43EBF629DF6CDC00890425 /* CravinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F43EC0E29DF6CDC00890425 /* Build configuration list for PBXNativeTarget "CravinTests" */;
+			buildPhases = (
+				8F43EBF329DF6CDC00890425 /* Sources */,
+				8F43EBF429DF6CDC00890425 /* Frameworks */,
+				8F43EBF529DF6CDC00890425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F43EBF929DF6CDC00890425 /* PBXTargetDependency */,
+			);
+			name = CravinTests;
+			productName = CravinTests;
+			productReference = 8F43EBF729DF6CDC00890425 /* CravinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F43EC0029DF6CDC00890425 /* CravinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F43EC1129DF6CDC00890425 /* Build configuration list for PBXNativeTarget "CravinUITests" */;
+			buildPhases = (
+				8F43EBFD29DF6CDC00890425 /* Sources */,
+				8F43EBFE29DF6CDC00890425 /* Frameworks */,
+				8F43EBFF29DF6CDC00890425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F43EC0329DF6CDC00890425 /* PBXTargetDependency */,
+			);
+			name = CravinUITests;
+			productName = CravinUITests;
+			productReference = 8F43EC0129DF6CDC00890425 /* CravinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F43EBD629DF6CD900890425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8F43EBDD29DF6CD900890425 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8F43EBF629DF6CDC00890425 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8F43EBDD29DF6CD900890425;
+					};
+					8F43EC0029DF6CDC00890425 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8F43EBDD29DF6CD900890425;
+					};
+				};
+			};
+			buildConfigurationList = 8F43EBD929DF6CD900890425 /* Build configuration list for PBXProject "Cravin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F43EBD529DF6CD900890425;
+			productRefGroup = 8F43EBDF29DF6CD900890425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F43EBDD29DF6CD900890425 /* Cravin */,
+				8F43EBF629DF6CDC00890425 /* CravinTests */,
+				8F43EC0029DF6CDC00890425 /* CravinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F43EBDC29DF6CD900890425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F43EBF129DF6CDB00890425 /* LaunchScreen.storyboard in Resources */,
+				8F43EBEE29DF6CDB00890425 /* Assets.xcassets in Resources */,
+				8F43EBE929DF6CD900890425 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBF529DF6CDC00890425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBFF29DF6CDC00890425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F43EBDA29DF6CD900890425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F43EBE629DF6CD900890425 /* ViewController.swift in Sources */,
+				8F43EBE229DF6CD900890425 /* AppDelegate.swift in Sources */,
+				8F43EBEC29DF6CD900890425 /* Cravin.xcdatamodeld in Sources */,
+				8F43EBE429DF6CD900890425 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBF329DF6CDC00890425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F43EBFC29DF6CDC00890425 /* CravinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F43EBFD29DF6CDC00890425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F43EC0629DF6CDC00890425 /* CravinUITests.swift in Sources */,
+				8F43EC0829DF6CDC00890425 /* CravinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F43EBF929DF6CDC00890425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F43EBDD29DF6CD900890425 /* Cravin */;
+			targetProxy = 8F43EBF829DF6CDC00890425 /* PBXContainerItemProxy */;
+		};
+		8F43EC0329DF6CDC00890425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F43EBDD29DF6CD900890425 /* Cravin */;
+			targetProxy = 8F43EC0229DF6CDC00890425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F43EBE729DF6CD900890425 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F43EBE829DF6CD900890425 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F43EBF029DF6CDB00890425 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F43EC0929DF6CDC00890425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F43EC0A29DF6CDC00890425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F43EC0C29DF6CDC00890425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cravin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.Cravin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F43EC0D29DF6CDC00890425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cravin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.Cravin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F43EC0F29DF6CDC00890425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.CravinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cravin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cravin";
+			};
+			name = Debug;
+		};
+		8F43EC1029DF6CDC00890425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.CravinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cravin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cravin";
+			};
+			name = Release;
+		};
+		8F43EC1229DF6CDC00890425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.CravinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cravin;
+			};
+			name = Debug;
+		};
+		8F43EC1329DF6CDC00890425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamzeakyuz.CravinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cravin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F43EBD929DF6CD900890425 /* Build configuration list for PBXProject "Cravin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F43EC0929DF6CDC00890425 /* Debug */,
+				8F43EC0A29DF6CDC00890425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F43EC0B29DF6CDC00890425 /* Build configuration list for PBXNativeTarget "Cravin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F43EC0C29DF6CDC00890425 /* Debug */,
+				8F43EC0D29DF6CDC00890425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F43EC0E29DF6CDC00890425 /* Build configuration list for PBXNativeTarget "CravinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F43EC0F29DF6CDC00890425 /* Debug */,
+				8F43EC1029DF6CDC00890425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F43EC1129DF6CDC00890425 /* Build configuration list for PBXNativeTarget "CravinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F43EC1229DF6CDC00890425 /* Debug */,
+				8F43EC1329DF6CDC00890425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F43EBEA29DF6CD900890425 /* Cravin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F43EBEB29DF6CD900890425 /* Cravin.xcdatamodel */,
+			);
+			currentVersion = 8F43EBEB29DF6CD900890425 /* Cravin.xcdatamodel */;
+			path = Cravin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8F43EBD629DF6CD900890425 /* Project object */;
+}
