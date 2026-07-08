@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OMN-ME-0f9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Container Tab Controller-->
+        <scene sceneID="TBk-jQ-4Fv">
+            <objects>
+                <tabBarController id="OMN-ME-0f9" customClass="ContainerTabController" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="fill" id="thX-0d-3rz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Cpl-kj-WeE" kind="relationship" relationship="viewControllers" id="Gaf-GP-wAz"/>
+                        <segue destination="OhA-mb-mgH" kind="relationship" relationship="viewControllers" id="wvN-lE-sBp"/>
+                        <segue destination="9nG-5H-6oH" kind="relationship" relationship="viewControllers" id="qT0-qQ-ld7"/>
+                        <segue destination="VgX-AN-aRo" kind="relationship" relationship="viewControllers" id="pji-qs-byA"/>
+                        <segue destination="s8F-wG-ozV" kind="relationship" relationship="viewControllers" id="bMw-dC-D7d"/>
+                        <segue destination="16Q-En-1mu" kind="relationship" relationship="viewControllers" id="nBd-ti-kJi"/>
+                        <segue destination="Tjg-Mk-Rro" kind="relationship" relationship="viewControllers" id="v9T-T8-sMO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b49-Y6-Now" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703" y="779"/>
+        </scene>
+        <!--Podcast-->
+        <scene sceneID="eoe-lK-Hh0">
+            <objects>
+                <viewController storyboardIdentifier="PodcastVC" id="VgX-AN-aRo" customClass="PodcastVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbw-UW-gyP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dk2-uc-ddh">
+                                <rect key="frame" x="0.0" y="105" width="393" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="664" id="PnO-Xg-u9N"/>
+                                    <constraint firstAttribute="width" constant="393" id="s1q-DW-cte"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="103" id="cqp-8U-Q6h" customClass="PodcastTableViewCell" customModule="Cravin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cqp-8U-Q6h" id="cxa-ar-JVs">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VOw-vJ-U48">
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="103"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="127" id="UJo-AH-oLw"/>
+                                                        <constraint firstAttribute="height" constant="103" id="z4A-3g-oj7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-WJ-xFz">
+                                                    <rect key="frame" x="134.66666666666666" y="40" width="219.99999999999997" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="219.99999999999997" id="cz8-JC-uxR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VOw-vJ-U48" firstAttribute="top" secondItem="cxa-ar-JVs" secondAttribute="top" id="2qa-xj-xHj"/>
+                                                <constraint firstAttribute="bottom" secondItem="VOw-vJ-U48" secondAttribute="bottom" id="59J-K9-kpF"/>
+                                                <constraint firstItem="KA8-WJ-xFz" firstAttribute="leading" secondItem="VOw-vJ-U48" secondAttribute="trailing" constant="7.6666666666666288" id="A9v-fG-yC0"/>
+                                                <constraint firstItem="VOw-vJ-U48" firstAttribute="leading" secondItem="cxa-ar-JVs" secondAttribute="leading" id="UFU-8z-YyD"/>
+                                                <constraint firstItem="KA8-WJ-xFz" firstAttribute="top" secondItem="cxa-ar-JVs" secondAttribute="topMargin" constant="29" id="kD8-wl-k9T"/>
+                                                <constraint firstItem="KA8-WJ-xFz" firstAttribute="centerY" secondItem="VOw-vJ-U48" secondAttribute="centerY" id="lAb-OW-g2t"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KA8-WJ-xFz" secondAttribute="trailing" constant="5.6843418860808015e-14" id="lYR-AB-fXc"/>
+                                                <constraint firstItem="KA8-WJ-xFz" firstAttribute="centerY" secondItem="cxa-ar-JVs" secondAttribute="centerY" id="xVs-TL-W8w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="images" destination="VOw-vJ-U48" id="AZH-bU-j04"/>
+                                            <outlet property="labelText" destination="KA8-WJ-xFz" id="nlW-jo-kkC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PODCASTLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si4-aL-KkN">
+                                <rect key="frame" x="16" y="68" width="361" height="25"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="boD-wm-xH9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Si4-aL-KkN" firstAttribute="top" secondItem="boD-wm-xH9" secondAttribute="top" constant="9" id="10e-l1-zv4"/>
+                            <constraint firstItem="Dk2-uc-ddh" firstAttribute="bottom" secondItem="boD-wm-xH9" secondAttribute="bottom" id="WmL-Y2-haL"/>
+                            <constraint firstItem="Dk2-uc-ddh" firstAttribute="trailing" secondItem="boD-wm-xH9" secondAttribute="trailing" id="dzS-Xj-uj5"/>
+                            <constraint firstItem="Si4-aL-KkN" firstAttribute="centerX" secondItem="Dk2-uc-ddh" secondAttribute="centerX" id="feB-qg-PEj"/>
+                            <constraint firstItem="Si4-aL-KkN" firstAttribute="leading" secondItem="Dbw-UW-gyP" secondAttribute="leadingMargin" id="n2R-4f-3un"/>
+                            <constraint firstItem="Dk2-uc-ddh" firstAttribute="leading" secondItem="boD-wm-xH9" secondAttribute="leading" id="uut-qY-4pX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Podcast" image="beats.headphones" catalog="system" id="Uc9-In-lX4"/>
+                    <connections>
+                        <outlet property="tableView" destination="Dk2-uc-ddh" id="urR-Gz-FmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1z2-L9-Kyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="1234"/>
+        </scene>
+        <!--Düşün Seli-->
+        <scene sceneID="Rgo-IA-7ac">
+            <objects>
+                <viewController id="9nG-5H-6oH" customClass="DusunSeliVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3tP-2a-tcH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vM8-GM-pwb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-Vx-laI">
+                                        <rect key="frame" x="329" y="14" width="56" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="button:" destination="9nG-5H-6oH" eventType="touchUpInside" id="X30-eS-pcE"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   birşeyler yaz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-4L-TeV">
+                                        <rect key="frame" x="8" y="14" width="313" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="89h-dN-Ksk">
+                                <rect key="frame" x="0.0" y="143" width="393" height="626"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="systemOrangeColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Iv1-Te-QPP">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iv1-Te-QPP" id="bXK-GA-s8n">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fkt-mq-qRI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Düşün Seli" image="brain" catalog="system" id="rCM-TL-GcJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="89h-dN-Ksk" id="T8x-dB-wOW"/>
+                        <outlet property="textField" destination="GiA-4L-TeV" id="0gx-73-XgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olT-f4-YvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="513"/>
+        </scene>
+        <!--Podcast PlayerVC-->
+        <scene sceneID="ifX-ZL-f7N">
+            <objects>
+                <viewController storyboardIdentifier="PodcastPlayerVC" id="eb1-h1-PNk" customClass="PodcastPlayerVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ho1-3K-SjI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-fR-uos">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I2x-1g-enZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I2x-1g-enZ" firstAttribute="trailing" secondItem="8E2-fR-uos" secondAttribute="trailing" id="02T-Cf-cT6"/>
+                            <constraint firstItem="8E2-fR-uos" firstAttribute="top" secondItem="I2x-1g-enZ" secondAttribute="top" id="DDF-1w-edE"/>
+                            <constraint firstItem="I2x-1g-enZ" firstAttribute="bottom" secondItem="8E2-fR-uos" secondAttribute="bottom" id="VbV-PI-xvL"/>
+                            <constraint firstItem="8E2-fR-uos" firstAttribute="leading" secondItem="I2x-1g-enZ" secondAttribute="leading" id="iO1-iB-9bD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c7s-YJ-LHs"/>
+                    <connections>
+                        <outlet property="holder" destination="8E2-fR-uos" id="nhf-0w-FQs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9h-Qv-5Gz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3030" y="1234"/>
+        </scene>
+        <!--Nedir-->
+        <scene sceneID="bv1-Nb-Ruy">
+            <objects>
+                <viewController storyboardIdentifier="NedirVC" modalPresentationStyle="fullScreen" id="OhA-mb-mgH" customClass="NedirVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6l2-ng-6IJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Ev-ML-RtG">
+                                <rect key="frame" x="0.0" y="113" width="393" height="656"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="216" id="Zpk-eC-zyI" customClass="CustomTableViewCell" customModule="Cravin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zpk-eC-zyI" id="lcf-aw-wWZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VtM-QA-JL7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-ql-XXI">
+                                                    <rect key="frame" x="0.0" y="81.666666666666671" width="393" height="53.000000000000014"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49554877879999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="393" id="PpJ-cv-FTQ"/>
+                                                        <constraint firstAttribute="height" constant="53" id="ybs-34-MDV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="trailing" secondItem="sjL-ql-XXI" secondAttribute="trailing" id="5eB-Fd-ycT"/>
+                                                <constraint firstAttribute="trailing" secondItem="VtM-QA-JL7" secondAttribute="trailing" id="7Rp-TC-z8F"/>
+                                                <constraint firstItem="sjL-ql-XXI" firstAttribute="leading" secondItem="lcf-aw-wWZ" secondAttribute="leading" id="9c7-xI-Ace"/>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="centerY" secondItem="sjL-ql-XXI" secondAttribute="centerY" constant="-0.16666666666668561" id="H44-nI-SyT"/>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="leading" secondItem="sjL-ql-XXI" secondAttribute="leading" id="TNM-zd-1pX"/>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="top" secondItem="lcf-aw-wWZ" secondAttribute="topMargin" constant="-11" id="h7e-wX-ErF"/>
+                                                <constraint firstAttribute="trailing" secondItem="sjL-ql-XXI" secondAttribute="trailing" id="pTF-T9-VnK"/>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="leading" secondItem="lcf-aw-wWZ" secondAttribute="leading" id="pzF-uR-Lpr"/>
+                                                <constraint firstItem="VtM-QA-JL7" firstAttribute="bottom" secondItem="lcf-aw-wWZ" secondAttribute="bottomMargin" constant="11" id="s0H-1S-C5d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="images" destination="VtM-QA-JL7" id="jKt-Ty-3cp"/>
+                                            <outlet property="titles" destination="sjL-ql-XXI" id="TnM-Eb-Ad5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEDİR?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M75-WW-4Jh">
+                                <rect key="frame" x="16" y="67" width="361" height="38"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rw0-zd-xle"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Ev-ML-RtG" firstAttribute="top" secondItem="M75-WW-4Jh" secondAttribute="bottom" constant="8" id="2Kb-a6-5Ea"/>
+                            <constraint firstItem="5Ev-ML-RtG" firstAttribute="top" secondItem="rw0-zd-xle" secondAttribute="top" constant="54" id="3Mf-dR-jkR"/>
+                            <constraint firstItem="5Ev-ML-RtG" firstAttribute="trailing" secondItem="rw0-zd-xle" secondAttribute="trailing" id="4Ww-sU-w3F"/>
+                            <constraint firstItem="5Ev-ML-RtG" firstAttribute="bottom" secondItem="rw0-zd-xle" secondAttribute="bottom" id="PMt-a5-z9F"/>
+                            <constraint firstItem="M75-WW-4Jh" firstAttribute="leading" secondItem="6l2-ng-6IJ" secondAttribute="leadingMargin" id="WEX-GZ-akC"/>
+                            <constraint firstItem="5Ev-ML-RtG" firstAttribute="leading" secondItem="rw0-zd-xle" secondAttribute="leading" id="dCC-dA-8ol"/>
+                            <constraint firstItem="M75-WW-4Jh" firstAttribute="centerX" secondItem="5Ev-ML-RtG" secondAttribute="centerX" id="rOh-L0-imo"/>
+                            <constraint firstItem="M75-WW-4Jh" firstAttribute="top" secondItem="rw0-zd-xle" secondAttribute="top" constant="8" id="txB-9R-Vzb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nedir" image="questionmark" catalog="system" id="3l2-il-OvB"/>
+                    <connections>
+                        <outlet property="tableView" destination="5Ev-ML-RtG" id="fRS-9A-bzP"/>
+                        <segue destination="fhh-vo-rBo" kind="presentation" identifier="toNedirDetayVC" id="dED-MG-tZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOc-mn-8Lz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="-180"/>
+        </scene>
+        <!--Meditasyon-->
+        <scene sceneID="ZQy-Kb-7zw">
+            <objects>
+                <viewController storyboardIdentifier="MeditasyonVC" modalPresentationStyle="fullScreen" id="Cpl-kj-WeE" customClass="MeditasyonVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ns1-Is-jL5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dream_TradingCard" translatesAutoresizingMaskIntoConstraints="NO" id="RDt-v8-GMD">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-Xc-pbM">
+                                <rect key="frame" x="140" y="536" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mantra " cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mantraVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="2xr-me-ttf"/>
+                                    <segue destination="9pr-Xl-EvW" kind="presentation" modalPresentationStyle="automatic" id="j1c-h6-Z3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQJ-4q-u1p">
+                                <rect key="frame" x="251" y="536" width="114" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yoğa" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="yogaVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="DbE-e9-SAa"/>
+                                    <segue destination="7FO-Ab-r4a" kind="presentation" modalPresentationStyle="automatic" id="KE3-dY-m7c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsi-zo-nXz">
+                                <rect key="frame" x="193" y="642" width="172" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mindfulness" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mindfulnessVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="Jcw-3z-eEz"/>
+                                    <segue destination="5JJ-uO-Dln" kind="presentation" modalPresentationStyle="automatic" id="zfW-8b-T3q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-Hg-V5n">
+                                <rect key="frame" x="251" y="587" width="114" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vipassana" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="vipassanaVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="1C0-t7-1OM"/>
+                                    <segue destination="tNb-53-6vM" kind="presentation" modalPresentationStyle="automatic" id="moD-gq-b1o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-eg-AFy">
+                                <rect key="frame" x="24" y="642" width="161" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Transandantal" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="transandantalVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="na0-L8-Yq0"/>
+                                    <segue destination="kYr-MU-ct0" kind="presentation" modalPresentationStyle="automatic" id="JRJ-Ag-oKs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-tj-eJk">
+                                <rect key="frame" x="147" y="587" width="98" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Chakra" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chakraVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="b43-Ft-DXI"/>
+                                    <segue destination="lUs-PY-X3p" kind="presentation" modalPresentationStyle="automatic" id="m2o-XG-3U1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyf-A9-Oft">
+                                <rect key="frame" x="24" y="471" width="341" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Nefes Farkındalığı" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nefesfarkindaligiVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="rZ5-ER-PjC"/>
+                                    <segue destination="cCJ-rT-Nil" kind="show" id="3qr-IX-fcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoX-md-JFO">
+                                <rect key="frame" x="26" y="587" width="117" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Nidra" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nidrayogaVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="LIL-tf-LDe"/>
+                                    <segue destination="fWK-xj-aFc" kind="presentation" modalPresentationStyle="automatic" id="8ar-Ut-g5z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-Yy-OwN">
+                                <rect key="frame" x="24" y="536" width="108" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Zen" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zenVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="lC9-eF-JC6"/>
+                                    <segue destination="ECa-hG-Orx" kind="presentation" modalPresentationStyle="automatic" id="dip-IY-gRS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MEDİTASYON TÜRLERİ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-kW-3Vp">
+                                <rect key="frame" x="16" y="113" width="361" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxr-dJ-IBd">
+                                <rect key="frame" x="24" y="701" width="341" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Loving - Kindness" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="-2">
+                                        <color key="backgroundColor" white="0.0" alpha="0.20041433321375426" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="lovingkidnessVC:" destination="Cpl-kj-WeE" eventType="touchUpInside" id="Wp0-dx-TYs"/>
+                                    <segue destination="GGn-AC-uWo" kind="presentation" modalPresentationStyle="automatic" id="5Hc-Fz-v6n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZFF-7E-9KM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meditasyon" id="bHe-vf-n6C">
+                        <imageReference key="image" image="circle.hexagongrid.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="58d-yn-MBD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBe-Pp-mkL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139.6946564885498" y="-899.29577464788736"/>
+        </scene>
+        <!--Bizi Tanıyın-->
+        <scene sceneID="0sB-PR-7VA">
+            <objects>
+                <viewController id="Tjg-Mk-Rro" customClass="AppInfoVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pV1-J9-HF4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elT-my-2aZ">
+                                <rect key="frame" x="16" y="230" width="361" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Cravin Meditation, kullanıcıların meditasyon pratiğini kolaylıkla sürdürebilmeleri için tasarlanmış bir mobil uygulamadır. Size çeşitli meditasyon teknikleri sunarak, zihninizi sakinleştirebilir, odaklanmayı geliştirebilir ve içsel huzurunuzu bulmanıza yardımcı olabilir. Uygulama, bir çok özellik sunarak rahatlamanızı saglar.</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CRAVİN MEDİTATİON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inb-hY-0lw">
+                                <rect key="frame" x="16" y="59" width="361" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cuI-Ea-LOp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bizi Tanıyın" image="info" catalog="system" id="CJ1-fE-o32"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xf-dT-hTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139.6946564885498" y="3515.4929577464791"/>
+        </scene>
+        <!--Olumlama-->
+        <scene sceneID="MBv-jB-A2o">
+            <objects>
+                <viewController storyboardIdentifier="OlumlamaVC" id="s8F-wG-ozV" customClass="OlumlamaVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpY-KL-GV5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="dnz-1w-6JP">
+                                <rect key="frame" x="0.0" y="-234" width="393" height="1003"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-Sh-uhi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWn-9F-mYP">
+                                        <rect key="frame" x="331" y="598" width="49" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sharePressed:" destination="s8F-wG-ozV" eventType="touchUpInside" id="oHa-TC-azA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bw4-wd-WRk">
+                                        <rect key="frame" x="272" y="598" width="51" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shuffleText:" destination="s8F-wG-ozV" eventType="touchUpInside" id="ZuY-Ac-PkQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-k2-Fdn">
+                                        <rect key="frame" x="21" y="100" width="359" height="474"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="474" id="m3V-yf-AHH"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" red="0.77956384420000002" green="0.45922565459999998" blue="0.63923060890000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="shadowOffset" width="-2" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="j7H-k2-Fdn" firstAttribute="leading" secondItem="BeN-Sh-uhi" secondAttribute="leading" constant="21" id="Afb-mU-gWb"/>
+                                    <constraint firstAttribute="trailing" secondItem="UWn-9F-mYP" secondAttribute="trailing" constant="13" id="M01-LR-bEm"/>
+                                    <constraint firstItem="Bw4-wd-WRk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BeN-Sh-uhi" secondAttribute="leading" constant="20" symbolic="YES" id="cjv-ng-yPq"/>
+                                    <constraint firstItem="j7H-k2-Fdn" firstAttribute="trailing" secondItem="UWn-9F-mYP" secondAttribute="trailing" id="crD-Qu-Ckn"/>
+                                    <constraint firstItem="UWn-9F-mYP" firstAttribute="top" secondItem="Bw4-wd-WRk" secondAttribute="top" id="fe2-rN-Hcb"/>
+                                    <constraint firstItem="UWn-9F-mYP" firstAttribute="leading" secondItem="Bw4-wd-WRk" secondAttribute="trailing" constant="8" id="ox4-qS-Hap"/>
+                                    <constraint firstAttribute="bottom" secondItem="UWn-9F-mYP" secondAttribute="bottom" constant="77" id="sw1-HX-Ief"/>
+                                    <constraint firstItem="UWn-9F-mYP" firstAttribute="top" secondItem="j7H-k2-Fdn" secondAttribute="bottom" constant="24" id="vUn-cB-ckp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oX3-hy-AuD"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="top" secondItem="oX3-hy-AuD" secondAttribute="top" id="0V1-yG-6wy"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="leading" secondItem="oX3-hy-AuD" secondAttribute="leading" id="1So-eR-9go"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="leading" secondItem="dnz-1w-6JP" secondAttribute="leading" id="P91-AK-lPG"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="centerX" secondItem="dpY-KL-GV5" secondAttribute="centerX" id="RBu-nQ-FVe"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="bottom" secondItem="oX3-hy-AuD" secondAttribute="bottom" id="WUR-ud-9bn"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="bottom" secondItem="dnz-1w-6JP" secondAttribute="bottom" id="f8T-5i-jQt"/>
+                            <constraint firstItem="BeN-Sh-uhi" firstAttribute="trailing" secondItem="dnz-1w-6JP" secondAttribute="trailing" id="q7b-Gh-CcT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Olumlama" image="pencil.and.outline" catalog="system" id="WbC-44-ulQ"/>
+                    <navigationItem key="navigationItem" id="8dC-a6-qgd"/>
+                    <connections>
+                        <outlet property="textLabel" destination="j7H-k2-Fdn" id="qcA-A7-Fpx"/>
+                        <outlet property="textView" destination="BeN-Sh-uhi" id="tV1-WB-qAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zL9-Of-Dkv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="2030"/>
+        </scene>
+        <!--Sakin Bir Alan-->
+        <scene sceneID="Yte-go-IBU">
+            <objects>
+                <viewController storyboardIdentifier="SakinAlanVC" id="16Q-En-1mu" customClass="SakinAlanVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MY7-Ag-oKq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-7b-3RL">
+                                <rect key="frame" x="205" y="507" width="168" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="QH2-Dp-dbT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="WATERFALL">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="waterfall" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.11750923839999999" green="0.18543222549999999" blue="0.094101272520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonSelale:" destination="16Q-En-1mu" eventType="touchUpInside" id="4ej-Uy-6Nu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1f-q7-2aK">
+                                <rect key="frame" x="205" y="195" width="168" height="136"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SILENCE">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="silence" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.17254901959999999" green="0.19246190790000001" blue="0.1725465357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonSessizlik:" destination="16Q-En-1mu" eventType="touchUpInside" id="3a0-8w-7aS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-HX-KS0">
+                                <rect key="frame" x="16" y="247" width="163" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="DKW-yH-MSo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PEACFUL">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="peacful" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.59051322939999995" green="0.25246044989999999" blue="0.16859540340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonHuzur:" destination="16Q-En-1mu" eventType="touchUpInside" id="hXM-Lo-6Pf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-ng-lsN">
+                                <rect key="frame" x="205" y="66" width="168" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="587-sK-mfx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NATURE">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="nature" imageContentMode="redraw" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.17602938409999999" green="0.1617655456" blue="0.08625958115" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDoga:" destination="16Q-En-1mu" eventType="touchUpInside" id="l1h-w7-5io"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-be-wor">
+                                <rect key="frame" x="16" y="588" width="163" height="152"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="RAIN">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="rain" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.1220892444" green="0.176309675" blue="0.1843156219" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonYagmur:" destination="16Q-En-1mu" eventType="touchUpInside" id="Ux5-zK-Da1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-XT-n4Y">
+                                <rect key="frame" x="16" y="409" width="163" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="ylg-k1-erQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SLEEP">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="sleep" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonSleep:" destination="16Q-En-1mu" eventType="touchUpInside" id="7P0-cv-jCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEg-xG-ZB7">
+                                <rect key="frame" x="205" y="642" width="168" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="aLg-x2-QQN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PIANO">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="piano" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.18024852869999999" green="0.19666498900000001" blue="0.15685692430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPiano:" destination="16Q-En-1mu" eventType="touchUpInside" id="OzE-QA-dhp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOd-eZ-GOg">
+                                <rect key="frame" x="205" y="357" width="168" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="mCB-iv-npG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FAİRYLANDS">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="fairylands" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.094070695339999996" green="0.16569072009999999" blue="0.086260922249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDuslerDiyari:" destination="16Q-En-1mu" eventType="touchUpInside" id="PdG-9t-RU8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-0R-cOX">
+                                <rect key="frame" x="16" y="121" width="163" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="IaO-By-M74"/>
+                                    <constraint firstAttribute="height" constant="103" id="gq5-uI-5nW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FOCUS">
+                                    <backgroundConfiguration key="background" cornerRadius="-20" image="focus" strokeWidth="5" strokeOutset="10">
+                                        <color key="strokeColor" red="0.2746162117" green="0.27024245260000002" blue="0.29019862410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonOdaklanma:" destination="16Q-En-1mu" eventType="touchUpInside" id="iW6-xC-30L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jjA-Jv-QBP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kwu-HX-KS0" firstAttribute="leading" secondItem="4WU-XT-n4Y" secondAttribute="leading" id="3XP-3b-RAQ"/>
+                            <constraint firstItem="6KE-0R-cOX" firstAttribute="trailing" secondItem="Kwu-HX-KS0" secondAttribute="trailing" id="4e6-bp-82I"/>
+                            <constraint firstItem="bOd-eZ-GOg" firstAttribute="top" secondItem="C1f-q7-2aK" secondAttribute="bottom" constant="26" id="8OC-D2-K0K"/>
+                            <constraint firstItem="jjA-Jv-QBP" firstAttribute="bottom" secondItem="IQr-be-wor" secondAttribute="bottom" constant="29" id="8ky-fH-HLl"/>
+                            <constraint firstItem="4WU-XT-n4Y" firstAttribute="trailing" secondItem="IQr-be-wor" secondAttribute="trailing" id="8tC-4U-mAS"/>
+                            <constraint firstItem="6KE-0R-cOX" firstAttribute="leading" secondItem="Kwu-HX-KS0" secondAttribute="leading" id="AcP-5k-nu2"/>
+                            <constraint firstItem="P7p-7b-3RL" firstAttribute="top" secondItem="bOd-eZ-GOg" secondAttribute="bottom" constant="24" id="EcU-gD-PgH"/>
+                            <constraint firstItem="bOd-eZ-GOg" firstAttribute="leading" secondItem="P7p-7b-3RL" secondAttribute="leading" id="Ixk-6p-YY5"/>
+                            <constraint firstItem="g5F-ng-lsN" firstAttribute="leading" secondItem="C1f-q7-2aK" secondAttribute="leading" id="LhG-iE-Tib"/>
+                            <constraint firstItem="C1f-q7-2aK" firstAttribute="trailing" secondItem="bOd-eZ-GOg" secondAttribute="trailing" id="NLc-b5-eCi"/>
+                            <constraint firstItem="4WU-XT-n4Y" firstAttribute="leading" secondItem="IQr-be-wor" secondAttribute="leading" id="Peb-hg-E3d"/>
+                            <constraint firstItem="g5F-ng-lsN" firstAttribute="leading" secondItem="6KE-0R-cOX" secondAttribute="trailing" constant="26" id="Rne-Iw-6RH"/>
+                            <constraint firstItem="Kwu-HX-KS0" firstAttribute="trailing" secondItem="4WU-XT-n4Y" secondAttribute="trailing" id="SDs-mc-3bN"/>
+                            <constraint firstItem="P7p-7b-3RL" firstAttribute="leading" secondItem="nEg-xG-ZB7" secondAttribute="leading" id="Sxx-jd-fE7"/>
+                            <constraint firstItem="g5F-ng-lsN" firstAttribute="trailing" secondItem="C1f-q7-2aK" secondAttribute="trailing" id="Xh7-kt-2md"/>
+                            <constraint firstItem="IQr-be-wor" firstAttribute="bottom" secondItem="nEg-xG-ZB7" secondAttribute="bottom" id="Yfo-bP-Iet"/>
+                            <constraint firstItem="P7p-7b-3RL" firstAttribute="trailing" secondItem="nEg-xG-ZB7" secondAttribute="trailing" id="fRo-EH-Z4N"/>
+                            <constraint firstItem="C1f-q7-2aK" firstAttribute="leading" secondItem="bOd-eZ-GOg" secondAttribute="leading" id="hhw-hQ-LLk"/>
+                            <constraint firstItem="bOd-eZ-GOg" firstAttribute="trailing" secondItem="P7p-7b-3RL" secondAttribute="trailing" id="iUM-sR-DNr"/>
+                            <constraint firstItem="g5F-ng-lsN" firstAttribute="top" secondItem="jjA-Jv-QBP" secondAttribute="top" constant="7" id="kj1-kL-Sm8"/>
+                            <constraint firstItem="6KE-0R-cOX" firstAttribute="leading" secondItem="MY7-Ag-oKq" secondAttribute="leadingMargin" id="lVy-Yu-ZhO"/>
+                            <constraint firstItem="C1f-q7-2aK" firstAttribute="top" secondItem="g5F-ng-lsN" secondAttribute="bottom" constant="26" id="pmD-27-oTV"/>
+                            <constraint firstItem="nEg-xG-ZB7" firstAttribute="top" secondItem="P7p-7b-3RL" secondAttribute="bottom" constant="26" id="qfB-TO-7Wo"/>
+                            <constraint firstItem="IQr-be-wor" firstAttribute="top" secondItem="4WU-XT-n4Y" secondAttribute="bottom" constant="25" id="r0J-hA-qVy"/>
+                            <constraint firstItem="4WU-XT-n4Y" firstAttribute="top" secondItem="Kwu-HX-KS0" secondAttribute="bottom" constant="26" id="tSb-ct-Kqp"/>
+                            <constraint firstItem="jjA-Jv-QBP" firstAttribute="trailing" secondItem="g5F-ng-lsN" secondAttribute="trailing" constant="20" id="tUg-rr-KGi"/>
+                            <constraint firstItem="Kwu-HX-KS0" firstAttribute="top" secondItem="6KE-0R-cOX" secondAttribute="bottom" constant="23" id="tcE-ME-XRj"/>
+                            <constraint firstItem="6KE-0R-cOX" firstAttribute="top" secondItem="jjA-Jv-QBP" secondAttribute="top" constant="62" id="xmw-XG-tUz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sakin Bir Alan" image="videoprojector" catalog="system" id="a1W-yR-4MI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b38-LQ-yGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="2782"/>
+        </scene>
+        <!--Nedir DetayVC-->
+        <scene sceneID="s4o-Us-cfg">
+            <objects>
+                <viewController storyboardIdentifier="NedirDetayVC" id="fhh-vo-rBo" customClass="NedirDetayVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xU8-PA-Yzq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" text=".." selectable="NO" findInteractionEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feW-Jr-ULY">
+                                <rect key="frame" x="16" y="68" width="361" height="754"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlQ-Il-d7h">
+                                <rect key="frame" x="16" y="20" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Un4-KD-ijS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="15"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="euR-UF-RP7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jlQ-Il-d7h" firstAttribute="leading" secondItem="feW-Jr-ULY" secondAttribute="leading" id="AYS-gm-dAc"/>
+                            <constraint firstAttribute="bottom" secondItem="feW-Jr-ULY" secondAttribute="bottom" constant="20" symbolic="YES" id="AjV-dN-Hgv"/>
+                            <constraint firstItem="feW-Jr-ULY" firstAttribute="top" secondItem="jlQ-Il-d7h" secondAttribute="bottom" constant="8" symbolic="YES" id="FrA-c9-eyR"/>
+                            <constraint firstItem="jlQ-Il-d7h" firstAttribute="trailing" secondItem="feW-Jr-ULY" secondAttribute="trailing" id="Vzb-5C-rsK"/>
+                            <constraint firstItem="jlQ-Il-d7h" firstAttribute="trailing" secondItem="xU8-PA-Yzq" secondAttribute="trailingMargin" id="mgc-sR-5ah"/>
+                            <constraint firstItem="jlQ-Il-d7h" firstAttribute="top" secondItem="xU8-PA-Yzq" secondAttribute="top" constant="20" symbolic="YES" id="r4K-HM-z2q"/>
+                            <constraint firstItem="jlQ-Il-d7h" firstAttribute="leading" secondItem="xU8-PA-Yzq" secondAttribute="leadingMargin" id="zVj-dl-pdq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FBj-01-nk3"/>
+                    <connections>
+                        <outlet property="detailsText" destination="feW-Jr-ULY" id="Qgc-Vf-EgX"/>
+                        <outlet property="titleLabel" destination="jlQ-Il-d7h" id="fzQ-Rw-CIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8K-tr-f8K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2955" y="-180"/>
+        </scene>
+        <!--ZenVC-->
+        <scene sceneID="qmj-Tr-HC0">
+            <objects>
+                <viewController storyboardIdentifier="ZenVC" id="ECa-hG-Orx" customClass="ZenVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VLe-cF-HGb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="natural" selectable="NO" layoutManager="textKit1" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-25-lpD">
+                                <rect key="frame" x="16" y="20" width="361" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="647" id="iGo-e6-UNz"/>
+                                </constraints>
+                                <string key="text">Tarihi Budizm’e dayanan Zen tekniği, zihni geçmiş ve geleceğin zincirlerinden kurtarmayı ve şimdiki zaman farkındalığını arttırmayı hedefleyen zengin bir meditasyon çeşididir. Birçok meditasyon çeşidinin aksine Zen meditasyonunda kısıtlamalar bulunmaz.Zen ya da Zazen meditasyonu sırasında bir noktaya odaklanmak, spesifik bir şekilde oturmak, nefes izlemek gibi teknikler kullanılmaz; çünkü bu tekniklerin de zihin üzerinde bir yük oluşturduğu düşünülür.      
+
+Zazen meditasyonu, Budist rahip Bodhidharma’nın Çin’e gelmesiyle M.S. 6. yüzyılda gelişmeye başlamıştır. Çin’deki zengin meditasyon pratikleri ile de zenginleşmiş ve özellikle Soto ve Rinzai okulları aracılığıyla Japonya’da da karşılık bulmuştur.
+
+Japon yaşam tarzının sadeliği ve minimalist kültür ile de birleşerek en debdebeli dönemlerine M.S. 12. yüzyılda ulaşmış ve dünyaya yayılmaya başlamıştır.
+
+2. Dünya Savaşı sonrasında Batı ülkelerine de sıçrayan Zen yani Zazen meditasyonu farklı kültürler ve pratikler ile zenginleşse de özündeki sadeliği ve yüklerden kurtulma pratiğini korumayı başarmıştır. Ancak, bu çok kültürlü yapısı nedeniyle farklı teknikleri doğmuştur.
+
+Daha önce de belirttiğimiz gibi Zen meditasyonunda belirli kurallar yoktur; ancak eğer Zen meditasyonuna yeni başlayacaksanız aşağıdaki temel adımlar işinizi kolaylaştırabilir:
+
+Rahat bir oturuş pozisyonu seçin.
+Yukarıdaki geleneksel Zen meditasyonu oturuş tekniklerinde henüz rahat edemeyebilirsiniz; bu nedenle, sandalye pozisyonunu ya da altınıza minder alarak oturmayı deneyebilirsiniz. Önemli olan kendinizi rahat hissetmeniz ve fiziksel durumunuzun mediatif halinizi bozmaması.
+
+Ortam seslerinden uzaklaşın.
+Zen meditasyonunda sessizlik çok önemlidir; bu nedenle, özellikle yeni başladıysanız ortam seslerinin yüksek olmadığı, sessiz, huzurlu bir alanda meditasyon yapmanızı tavsiye ederiz. Unutmayın ki çevre seslerinde değil, kendi iç sessizliğinizde yüzeceksiniz.
+
+Nefes egzersizleri yapın.
+Zen meditasyonunda nefes çok önemlidir; nefesin ruh ve enerjiye eşit olduğunu söyleyen bu meditasyon türünde nefesi solumak değil hissetmek gerekir. Meditasyonunuza başlamadan önce nefes egzersizleri yaparak içsel temizliğinize başlayabilirsiniz. Öncelikle oturduğunuz yerde öne arkaya yavaş yavaş salınabilir ve tüm odağınızı hara’da toplayabilirsiniz; ta ki denge merkezinize ulaşana dek.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-8Z-5v1">
+                                <rect key="frame" x="16" y="675" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="ECa-hG-Orx" eventType="touchUpInside" id="7aN-3j-gUx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TGf-Oj-VKY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uw9-25-lpD" firstAttribute="leading" secondItem="VLe-cF-HGb" secondAttribute="leadingMargin" id="HEA-Co-Heg"/>
+                            <constraint firstItem="uw9-25-lpD" firstAttribute="trailing" secondItem="VLe-cF-HGb" secondAttribute="trailingMargin" id="UIN-S5-t4z"/>
+                            <constraint firstItem="uw9-25-lpD" firstAttribute="top" secondItem="VLe-cF-HGb" secondAttribute="top" constant="20" symbolic="YES" id="YSm-Lj-3LT"/>
+                            <constraint firstItem="uw9-25-lpD" firstAttribute="trailing" secondItem="2Bg-8Z-5v1" secondAttribute="trailing" id="bh7-WE-FDj"/>
+                            <constraint firstItem="2Bg-8Z-5v1" firstAttribute="top" secondItem="uw9-25-lpD" secondAttribute="bottom" constant="8" symbolic="YES" id="sQe-ZB-psb"/>
+                            <constraint firstItem="uw9-25-lpD" firstAttribute="leading" secondItem="2Bg-8Z-5v1" secondAttribute="leading" id="uEl-Sr-CCg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j3J-WS-HB0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyd-2Q-FA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4962.5954198473282" y="-1358.4507042253522"/>
+        </scene>
+        <!--MantraVC-->
+        <scene sceneID="Vi7-lb-Q76">
+            <objects>
+                <viewController storyboardIdentifier="MantraVC" id="9pr-Xl-EvW" customClass="MantraVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Pq-dA-cpA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkk-0Q-NgB">
+                                <rect key="frame" x="16" y="20" width="361" height="629"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="629" id="sox-Yc-2km"/>
+                                </constraints>
+                                <string key="text">Mantra meditasyonu, tekrar eden bir kelime, cümle veya ses gibi bir nesne kullanarak zihnin odaklanmasını sağlayan bir meditasyon türüdür. 1. Adım: Mantranıza karar verin.
+
+Kulağa garip geldiğinin ve kafa karıştırıcı olduğunun farkındayız; ancak yukarıda da belirttiğimiz gibi mantra kişiyi rahatlatan ve zihnini özgürleştirmesine yardımcı olan kelimelere/ hecelere verilen isimdir; yani tek yapmanız gereken bir kelime üzerinde karar kılmak. 
+
+Peki, mantra nasıl bir kelime/ hece olmalıdır?
+
+Meditasyonda genel olarak kullanılan mantralar Sanskritçe kelimelerdir ve bunların başında; “Om”, “Om mani padme hum”, “O hum” gibi ifadeler yer alır. Sizin de fark ettiğiniz gibi bu kelimeler genelde “o” harfi ile başlamakta ve “m” harfi ile bitmektedir; çünkü mantra meditasyonunda açılış ve kapanış mantrası denilen bir kavram vardır. Ağzın açıldığı ve konuşmaya hazır hale geldiği “o” “u” gibi harfler genelde açılış mantrası olarak kullanılırken, “m” “n” gibi sesler ise kapanış mantrası olarak kullanılır ve sessizliği temsil eder. 
+
+Ancak, meditasyon yaparken her zaman bu “Om” seslerini kullanmanız gerekmez. Tamamen sizin uydurduğunuz bir kelime de aynı işlevi görebilir; hatta birçok insan mantra olarak bilmediği bir dildeki, kendisi için anlamsız olan kelimeleri tercih etmektedir çünkü buradaki asıl amaç, zihnin tek bir noktaya odaklanmasını sağlamak ve düşünce akışı zincirini kırabilmektir. Bilmediğiniz bir dildeki sözcükler, size başka konuları çağrıştırma konusunda çok daha zayıf kalacağı için, zihninizi ve odağınızı kontrol altına almanızı kolaylaştırır.
+
+Öte yanda, mantra olarak bireyi rahatlatan ve pozitif duygulara yönlendiren kelimeler de kullanılabilir. Bu pratiği ise en çok hippilerde görürüz; öyle ki 70’li yıllarda hippiler mantra olarak genelde “barış”, “aşk”, “özgürlük” gibi kelimeleri kullanmışlardır. Ancak yukarıda da belirttiğimiz gibi bu kelimelerin çağrışımları bilmediğiniz bir dile göre çok daha kuvvetlidir ve eğer mantra meditasyonuna yeni başladıysanız, düşünce akışınızı kırmanızı zorlaştırabilir. 
+
+
+2. Adım: Rahat bir pozisyon ve ortam belirleyin.
+
+Televizyonda gördüğümüzün aksine mantra meditasyonu yapmak için ille de olması gereken bir pozisyon yoktur: Önemli olan hangi pozisyonda kendinizi daha rahat hissettiğiniz ve daha raht nefes alıp verebildiğinizdir. Bu sebeple, oturarak, bağdaş kurarak ya da uzanarak hangisi sizi daha rahat hissettiriyorsa bu pozisyon üzerinde karar kılabilirsiniz.
+
+Ancak, konu ortam olduğunda mantra meditasyonu yapmak sizi biraz kısıtlayabilir; çünkü diğer meditasyon tekniklerinde ortam seçeneği biraz daha genişken maalesef mantrada durum böyle değildir. Adeta bir trans haline geçmeniz planlanan bu meditasyon tekniğinde oldukça sessiz bir ortamda olmanız ve olabildiği kadar az bölünmeniz gerekmektedir. Ayrıca, ortamda size yoğun çağrışımlar yapan ya da dikkatinizi dağıtma ihtimali olan nesneler de bulunmamalıdır. Bu iki ana kurala uyduğu sürece, ev, bahçe ya da doğa fark etmeksizin bir ortam belirleyebilirsiniz. 
+
+
+3. Adım: Nefesiniz ve mantranız üzerine yoğunlaşın.
+
+Meditasyonda nefesin ne kadar önemli olduğunu hepimiz biliyoruz; her meditasyon tekniğinde olduğu gibi mantra meditasyonunda da gözünüz kapalı olmak kaydıyla birkaç dakika nefes egzersizi yapmak ve kalp merkezine yönelmek önemlidir.
+
+
+Öncelikle belirtmek isteriz ki mantra meditasyonunuzda tekrarladığınız mantra ve nefesiniz arasında bir uyum olmak zorunda değildir. Yani heceleri nefesinize göre bölmek durumunda değilsiniz; ancak özellikle yoga geçmişi olan insanlar senkronize olmayan nefes ve mantradan rahatsız olabilir ve odak sorunu yaşayabilirler. Bu durumda, açılış mantranızı nefes alırken, kapanış mantranızı ise nefes verirken söyleyebilirsiniz. Örneğin, nefes alırken ‘o’, verirken ‘m’ sesi çıkarabilirsiniz. 
+
+Eğer mantranızı tekrar edemeyeceğiniz bir ortamdaysanız (Örneğin, toplu taşıma), yalnızca mantranızın tekrar edildiğini hayal etmeniz de yeterli olabilir. Yumuşak bir sesin kulağınıza mantranızı fısıldadığını hayal etmeniz de en az sizin tekrar etmeniz kadar etkili olabilir. 
+
+
+4. Adım: Zaman konusunda esnek olmaya çalışın.
+
+Meditasyona başlayan birçok insan uzun dakikalar boyunca meditasyon yapmak ister ve o kadar uzun süre odaklanamadığında ise kendini başarısız hisseder; halbuki şimdiden belirtmek isteriz ki meditasyon uzunluğunuzun başarılı olup olamamakla alakası yoktur. Aksine, meditasyona başladığınız ilk zamanlarda bedeninizin ve zihninizin ihtiyacı tahmin ettiğinizden çok daha azdır ve kısa bir meditasyon bile sizin için çok şey ifade edebilir.
+
+Ancak, genellikle mantra meditasyonunda mantranın tekrar edilme süresi 20 ilâ 30 dakika arasındadır ve sonrasında bu tekrarı bir sessizlik ve huzur durumu takip eder. Mantra tekrarının sizin için daha kısa olması önemli değildir; çünkü eğer 20-30 dakika boyunca odaklanamıyorsanız zaten kendinizi zorlamanıza gerek yoktur. Önemli olan odağınızı kaybetmeyeceğiniz ve mediatif duruma geçeceğiniz süreye kadar mantranızı tekrar etmeniz.
+
+Mantra tekrarını izleyen sürenin ise kesin bir rakamı maalesef bulunmamaktadır. Bazı bireyler için bu mediatif durum 1-2 dakika sürse de bazı bireyler meditasyonlarının ilk adımları dahi olsa bu durumdan uzun dakikalar boyunca çıkamaz ve alarm kurma ihtiyacı hisseder. Bu durumda, yine süreyi belirleyecek olan bedeninizin ve zihninizin ihtiyaçlarıdır. Bu sebeple, size verebileceğimiz en iyi tavsiye zaman konusunda esnek olmanız ve kendi meditasyon ihtiyaçlarınıza kulak vermeniz olabilir. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvS-L3-HUr">
+                                <rect key="frame" x="16" y="657" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="9pr-Xl-EvW" eventType="touchUpInside" id="rEv-hG-zO9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GOL-yK-hUZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qkk-0Q-NgB" firstAttribute="leading" secondItem="3Pq-dA-cpA" secondAttribute="leadingMargin" id="94F-mP-t5c"/>
+                            <constraint firstItem="Qkk-0Q-NgB" firstAttribute="leading" secondItem="ZvS-L3-HUr" secondAttribute="leading" id="IaW-wc-FJv"/>
+                            <constraint firstItem="Qkk-0Q-NgB" firstAttribute="trailing" secondItem="3Pq-dA-cpA" secondAttribute="trailingMargin" id="JBb-hL-ofF"/>
+                            <constraint firstItem="Qkk-0Q-NgB" firstAttribute="trailing" secondItem="ZvS-L3-HUr" secondAttribute="trailing" id="aA1-lv-Mst"/>
+                            <constraint firstItem="ZvS-L3-HUr" firstAttribute="top" secondItem="Qkk-0Q-NgB" secondAttribute="bottom" constant="8" symbolic="YES" id="iIU-Qb-Uft"/>
+                            <constraint firstItem="Qkk-0Q-NgB" firstAttribute="top" secondItem="3Pq-dA-cpA" secondAttribute="top" constant="20" symbolic="YES" id="ks3-iW-bvt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDX-j0-d6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5889.3129770992364" y="-2068.3098591549297"/>
+        </scene>
+        <!--YogaVC-->
+        <scene sceneID="gtn-eP-yzU">
+            <objects>
+                <viewController storyboardIdentifier="YogaVC" id="7FO-Ab-r4a" customClass="YogaVC" customModule="Cravin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeG-Hz-Tbe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn4-xp-MTb">
+                                <rect key="frame" x="16" y="20" width="361" height="658"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="658" id="bWN-aD-EYh"/>
+                                </constraints>
+                                <string key="text">Yoga denildiğinde akıllara “asana” denilen bazı özel yoga duruşları, yoga pozları ya da meditasyon gelebilir. Aslında bunların ikisine de yogada yer var. Çünkü yoga ruhsal ve bedensel uyuma odaklanan ve bu doğrultuda fiziksel egzersizlerden nefes çalışmalarına ve meditasyona kadar geniş bir yelpazeden oluşan bir disiplin.
+
+Yüzyıllardan beri var olan, Hindistan ve Himayalar’da doğduğu düşünülen yoganın kelime anlamı ise Sanskritçe bir kelime olan “yuji”den geliyor. Yuji; “birleştirmek, katılmak” anlamına gelen bir kelime. 
+
+Yoganın Faydaları Nelerdir?
+Fiziksel gücü artırabilir.
+Kasları güçlendirdiği için kronikleşmiş fiziksel ağrıların hafiflemesini sağlayabilir.
+Stres, kaygı gibi olumsuz duygulardan ve depresyon gibi durumlardan uzaklaşmanıza yardımcı olabilir.
+Daha esnek bir vücuda sahip olmanıza yardımcı olabilir.
+Çeşitli hastalıklara sebep olabilen vücut iltihaplanmalarını azaltabilir.
+Uyku kalitenizi artırabilir.
+Yapılan pranayama (nefes) çalışmaları, akciğer fonksiyonlarını iyileştirmeye katkı sağlayarak solunum üzerinde pozitif bir etki yaratabilir. Yoga Türleri Nelerdir?
+
+“Yoga nasıl yapılır?” sorusunun yanıtı için yoga türlerini incelemek gerekir. Çünkü farklı disiplindeki yoga çeşitleri, yoganın nasıl bir akışta yapılacağı, yoga hareketleri konusunda da belirleyici olabilir. Fakat zamanla, pek çok yoga hareketinin birden fazla yoga stilinde yer aldığını ve bu doğrultuda karma stiller oluştuğunu da belirtmeden geçmeyelim.
+
+Vinyasa Yoga: Asanaların belirlenen bir düzenle yerleştirilerek akışın oluşturulduğu, nefes ve beden koordinasyonunun önemli olduğu bir yoga çeşididir. Nefes alıp verirken poz değiştirilebilir. Oldukça aktif bir akışa sahiptir. Vinyasa yoga müzik eşliğinde yapılabilir.
+Ashtanga Yoga: Antik yoga geleneğinde yer alan yoga hareketlerinin yer aldığı belirli, değişmeyen bir akışın uygulandığı yoga stilidir. Vinyasa yoga ile arasındaki en önemli fark ise değişmeyen bu akıştır. Asthanga yoga, esnemeyi artırmaya nefesi kontrol etmeye yardımcı olabilir. Oldukça aktif bir akışa sahip olduğu için yeni başlayanlar için uygun olmayabilir.
+Hatha Yoga: En çok uygulanan çeşitlerden biridir. Vinyasa ve Asthanga yoga türlerinde uygulanan asanaları barındıran, daha yavaş bir akışın uygulandığı yoga çeşididir. Kasları güçlendirmeye, esnetmeye odaklandığı için başlangıç seviyesi için uygun bir seçim olabilir.
+İyengar Yoga: Pozlarda uzun süre durarak güç oluşturmayı, pozlarda derinleşmeyi ve bu sayede fiziksel gelişimi amaçlayan bir yoga stilidir. İyengar yoga türünde önemli olan, pozların her öğrencinin vücuduna uygun bir şekilde uygulanmasıdır. Bu nedenle kemer, blok, battaniye gibi yardımcı malzemelerden yardım alınabilir. Eğer fiziksel bir sağlık sorununuz varsa doktorunuza danışarak bu yoga türünü uygulayabilirsiniz.
+Bikram Yoga: Sıcak bir odada yapılması nedeniyle “sıcak yoga” olarak da bilinir. Sıcaklığın kasları gevşettiğine ve esnekliği artırdığına inanılır. Bol ter atılabilecek bu yoga türünde “Yoga zayıflatır mı?” sorusuna olumlu bir yanıt vermek mümkün olabilir.
+Kundalini Yoga: “Farklılık yogası” olarak da bilinir. Vücutta biriken enerjinin atılmasına odaklanan, bu sebeple nefesle koordineli bir şekilde gerçekleştirilen asanaların fiziksel deneyim sağladığına inanılan bir türdür. Meditasyon ve nefes çalışmaları önemli bir yer tutar. Akışı çok aktif olmadığı gibi çok pasif de değildir.
+Restoratif Yoga: Pozlarda uzun süre durulması nedeniyle oldukça yavaş bir akışa sahip olan yoga çeşididir. Pozlarda uzun süre kalmanın zihinsel olarak gelişimi artırabileceği düşünülür. Yoga başlangıç seviyesi için uygun bir seçim olabilir. Yin yoga da restoratif yoga türlerinden biri olarak kabul edilir.
+Swing Yoga: “Hamak yogası”, “aerial yoga” ya da “anti-gravity yoga” olarak da bilinir. Tavana asılan özel bir hamak üzerinde yapılır. Oldukça yeni ve popüler bir yoga türü olan bu yoga türünde de kas gelişimi, esneklik ve denge konularında gelişim hedeflenir.
+Hamile Yogası: Hamilelik dönemine uygun bir akışa sahip yoga türüdür. Hamileliğin ileriki dönemlerinde görülebilen sırt, bel ağrılarını azaltabilir. Ayrıca nefes uygulamaları sayesinde vücuda alınan oksijen miktarını artırabilir.
+Yüz Yogası: Yüz kaslarını geliştirmeye ve yüzü şekillendirmeye odaklanan bir yoga türüdür.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-H8-mRL">
+                                <rect key="frame" x="16" y="686" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="7FO-Ab-r4a" eventType="touchUpInside" id="gaS-Qi-fGZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0fU-nb-YvU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yn4-xp-MTb" firstAttribute="trailing" secondItem="N0N-H8-mRL" secondAttribute="trailing" id="2B6-AS-9ai"/>
+                            <constraint firstItem="yn4-xp-MTb" firstAttribute="leading" secondItem="DeG-Hz-Tbe" secondAttribute="leadingMargin" id="LRX-IV-B3T"/>
+                            <constraint firstItem="yn4-xp-MTb" firstAttribute="leading" secondItem="N0N-H8-mRL" secondAttribute="leading" id="Upb-PO-V24"/>
+                            <constraint firstItem="N0N-H8-mRL" firstAttribute="top" secondItem="yn4-xp-MTb" secondAttribute="bottom" constant="8" symbolic="YES" id="VLc-4I-N8I"/>
+                            <constraint firstItem="yn4-xp-MTb" firstAttribute="trailing" secondItem="DeG-Hz-Tbe" secondAttribute="trailingMargin" id="VSS-LE-yeA"/>
+                            <constraint firstItem="yn4-xp-MTb" firstAttribute="top" secondItem="DeG-Hz-Tbe" secondAttribute="top" constant="20" symbolic="YES" id="vxS-sW-jvB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2YF-8f-eXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5889.3129770992364" y="-2793.6619718309862"/>
+        </scene>
+        <!--ChakraVC-->
+        <scene sceneID="iNr-3P-k9q">
+            <objects>
+                <viewController storyboardIdentifier="ChakraVC" id="lUs-PY-X3p" customClass="ChakraVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vw3-IR-QKP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-p5-wHY">
+                                <rect key="frame" x="16" y="20" width="361" height="627"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="627" id="V4J-oG-Uzf"/>
+                                </constraints>
+                                <string key="text">Chakra meditasyonu, enerji merkezlerimiz olan çakraların dengeye getirilmesine yardımcı olan bir meditasyon tekniğidir. İşte chakra meditasyonunu yapmak için adımlar:
+1. Doğru bir pozisyon alın: Rahat bir pozisyonda oturun veya yatın. Sırtınız dik, omuzlarınız rahat ve gözleriniz kapalı olsun.
+2. Zihninizi hazırlayın: Meditasyona başlamadan önce, zihninizin sakinleşmesine yardımcı olmak için birkaç dakika boyunca derin nefes alın ve gevşeyin.
+3. Chakra odaklanın: Chakra meditasyonu, enerji merkezlerimize (çakralarımıza) odaklanır. Vücudunuzdaki yedi ana çakrayı (kök, sakral, solar pleksus, kalp, boğaz, üçüncü göz ve tepe çakra) sırasıyla düşünün ve her bir çakranın rengini hayal edin.
+4. Çakraları dengeleyin: Çakraların her birinin özellikleri vardır ve her çakranın enerjisi denge halinde olmalıdır. Her çakranın rengine odaklanarak, o çakraya özgü özellikleri hatırlayın ve o çakranın enerjisinin dengede olduğunu hayal edin. Dengeyi sağlamak için, o çakranın rengiyle ilgili mantralar veya afirmasyonlar söyleyebilirsiniz.
+5. Meditasyon sürenizi ayarlayın: Chakra meditasyonu yapmak için önerilen süre, günde 20-30 dakikadır. Bu süreyi zamanla artırabilirsiniz.
+6. Meditasyonunuzu sonlandırın: Meditasyonunuzu sonlandırmak için, gözlerinizi yavaşça açın ve birkaç dakika boyunca oturun. Meditasyonunuzun sakin ve rahatlatıcı bir his bırakması için birkaç dakika daha oturabilirsiniz.
+Not: Chakra meditasyonu, herhangi bir din veya inanca bağlı olmadığından herkes tarafından yapılabilecek bir meditasyon tekniğidir. Ancak, chakra meditasyonunu doğru bir şekilde yapmak için, chakra sistemini ve özelliklerini öğrenmek faydalı olacaktır.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-3L-0b1">
+                                <rect key="frame" x="16" y="655" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="lUs-PY-X3p" eventType="touchUpInside" id="4K6-uY-RVL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RJC-DW-xck"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qd4-3L-0b1" firstAttribute="top" secondItem="K3V-p5-wHY" secondAttribute="bottom" constant="8" symbolic="YES" id="7ch-0Y-xbT"/>
+                            <constraint firstItem="K3V-p5-wHY" firstAttribute="top" secondItem="vw3-IR-QKP" secondAttribute="top" constant="20" symbolic="YES" id="9wT-BO-ZHq"/>
+                            <constraint firstItem="K3V-p5-wHY" firstAttribute="trailing" secondItem="vw3-IR-QKP" secondAttribute="trailingMargin" id="CgS-XY-QOp"/>
+                            <constraint firstItem="K3V-p5-wHY" firstAttribute="leading" secondItem="qd4-3L-0b1" secondAttribute="leading" id="K8k-VS-1kb"/>
+                            <constraint firstItem="K3V-p5-wHY" firstAttribute="leading" secondItem="vw3-IR-QKP" secondAttribute="leadingMargin" id="Qle-PX-cVh"/>
+                            <constraint firstItem="K3V-p5-wHY" firstAttribute="trailing" secondItem="qd4-3L-0b1" secondAttribute="trailing" id="uJ8-38-cG3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyv-4A-utr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7577.8625954198469" y="-2338.0281690140846"/>
+        </scene>
+        <!--VipassanaVC-->
+        <scene sceneID="Ggb-Zu-0bl">
+            <objects>
+                <viewController storyboardIdentifier="VipassanaVC" id="tNb-53-6vM" customClass="VipassanaVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ve-Ty-nzT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZs-OC-nJZ">
+                                <rect key="frame" x="16" y="20" width="361" height="634"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="634" id="ffq-D2-FNK"/>
+                                </constraints>
+                                <string key="text">Vipassana meditasyonu, bilinçli bir farkındalıkla kendinizi gözlemlemeyi ve içsel dünyanızın derinliklerine nüfuz etmeyi amaçlayan bir meditasyon türüdür. İşte Vipassana meditasyonu yapmak için adımlar:
+1. Doğru bir pozisyon alın: Rahat bir pozisyonda oturun veya yatın. Sırtınız dik, omuzlarınız rahat ve gözleriniz kapalı olsun.
+2. Nefesinize odaklanın: Nefes alışverişinizi fark edin ve nefeslerinizi yavaşça ve derinlemesine alın. Burundan nefes alıp ağızdan verin. Nefes alıp verirken, bedeninizi rahatlattığınızı hissedin.
+3. Zihninizi odaklayın: Dikkatinizi nefes alışverişinize odaklayın. Nefes alıp verirken, düşüncelerinize izin vermeyin. Sadece farkındalığınızı nefesinize getirin.
+4. Bedeninizdeki hislere odaklanın: Dikkatinizi bedeninizdeki hislere odaklayın. Bedeninizdeki herhangi bir ağrı veya rahatsızlık hissini fark edin, ancak ona takılıp kalmayın. Yalnızca bedeninizdeki hisleri fark edin ve üzerlerinde düşünmeden geçin.
+5. Duygularınıza farkındalıkla yaklaşın: Düşüncelerinizi ve hislerinizi gözlemledikten sonra, duygu ve hislerinizi fark etmeye çalışın. Olumlu veya olumsuz olabilirler, ama onları sadece gözlemleyin ve üzerlerinde düşünmeyin.
+6. Zihninizin doğasını anlamaya çalışın: Zihninizdeki düşüncelerin ve hislerin doğasını anlamaya çalışın. Onları nereden geldiği ve nasıl kayboldukları hakkında düşünmeyin, sadece onları gözlemleyin.
+7. Meditasyon süresini belirleyin: İlk başta, kısa bir süre boyunca meditasyon yapmaya başlayın, örneğin 10-15 dakika. Sonra süreyi yavaş yavaş artırın.
+8. Meditasyonu bitirin: Meditasyon süreniz bittiğinde, yavaşça gözlerinizi açın ve kendinizi meditasyonun etkisine bırakın.
+Vipassana meditasyonu yaparken, dikkatinizi nefesinize, bedeninizdeki hislere ve duygu ve hislerinize odaklanın. Zihninizdeki düşüncelerin ve hislerin doğasını anlamaya çalışın. 
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="459-Ai-Yw2">
+                                <rect key="frame" x="16" y="662" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="tNb-53-6vM" eventType="touchUpInside" id="n2s-Lk-CZ1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5AJ-r6-1Tp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LZs-OC-nJZ" firstAttribute="trailing" secondItem="459-Ai-Yw2" secondAttribute="trailing" id="7af-EZ-WTS"/>
+                            <constraint firstItem="LZs-OC-nJZ" firstAttribute="leading" secondItem="4ve-Ty-nzT" secondAttribute="leadingMargin" id="7xt-LY-fv0"/>
+                            <constraint firstItem="LZs-OC-nJZ" firstAttribute="trailing" secondItem="4ve-Ty-nzT" secondAttribute="trailingMargin" id="Um4-Pu-JCG"/>
+                            <constraint firstItem="LZs-OC-nJZ" firstAttribute="top" secondItem="4ve-Ty-nzT" secondAttribute="top" constant="20" symbolic="YES" id="Va0-KQ-TCe"/>
+                            <constraint firstItem="LZs-OC-nJZ" firstAttribute="leading" secondItem="459-Ai-Yw2" secondAttribute="leading" id="lys-A2-G2V"/>
+                            <constraint firstItem="459-Ai-Yw2" firstAttribute="top" secondItem="LZs-OC-nJZ" secondAttribute="bottom" constant="8" symbolic="YES" id="pKH-nj-6g8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpv-Da-1PQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4962.5954198473282" y="-649.29577464788736"/>
+        </scene>
+        <!--Nefes FarkindaligiVC-->
+        <scene sceneID="dTh-lI-myI">
+            <objects>
+                <viewController storyboardIdentifier="NefesFarkindaligiVC" id="cCJ-rT-Nil" customClass="NefesFarkindaligiVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K20-VV-emu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-X1-RjU">
+                                <rect key="frame" x="8" y="20" width="377" height="651"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Nefes, bizim dünyayla olan yegane bağlantımızdır. Bu bağlantıyı fark etmek ve regüle etmek günlük akışınızda kendinizle olmanızı sağlar. Peki nefes farkındalığı için ne yapabiliriz? Elbette “Nefes farkındalığı meditasyonu”.  Nefes farkındalığı meditasyonu,  zihin- beden bağlantısını gözlemleyebileceğimiz kapsamı bize sunar. Bu gözlem nefese dikkat yoluyla başlar ve beş aşamadan oluşur. 
+1. Doğru bir pozisyon alın: Rahat bir pozisyonda oturun veya yatın. Sırtınız dik, omuzlarınız rahat ve gözleriniz kapalı olsun.
+2. Nefesinizi hissedin: Nefes alıp verirken, dikkatinizi nefesinize odaklayın. Nefes alırken, burun deliklerinizden soğuk hava girer ve nefesinizi yavaşça içeri çekerken hissedin. Nefes verirken, sıcak hava burun deliklerinizden dışarı çıkar ve nefesinizi yavaşça verirken hissedin.
+3. Zihninizi temizleyin: Meditasyona başlamadan önce, zihninizin sakinleşmesine yardımcı olmak için birkaç dakika boyunca derin nefes alın ve gevşeyin. Zihninizi boşaltın ve nefesinizi hissetmeye odaklanın.
+4. Nefes farkındalığını artırın: Nefesinizi hissetmeye devam edin. Nefes alıp verirken, nefesinizi farklı bir şekilde hissetmeye çalışın. Nefesinizin hızını, derinliğini, ritmini ve hissini fark edin.
+5. Zihni yönetin: Meditasyon sırasında, zihninizin dağılmasına izin vermeyin. Zihninizin başka düşüncelere kaymasına izin verdiğinizde, farkına varın ve dikkatinizi yeniden nefesinize odaklayın.
+6. Meditasyon sürenizi ayarlayın: Nefes farkındalığı meditasyonu yapmak için önerilen süre, günde 20-30 dakikadır. Bu süreyi zamanla artırabilirsiniz.
+7. Meditasyonunuzu sonlandırın: Meditasyonunuzu sonlandırmak için, gözlerinizi yavaşça açın ve birkaç dakika boyunca oturun. Meditasyonunuzun sakin ve rahatlatıcı bir his bırakması için birkaç dakika daha oturabilirsiniz.
+Not: Nefes farkındalığı meditasyonu, herhangi bir din veya inanca bağlı olmadığından herkes tarafından yapılabilecek bir meditasyon tekniğidir. Bu meditasyon tekniği, zihninizi sakinleştirmek ve bedeninizdeki gerginliği azaltmak için faydalıdır.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sb-no-hR0">
+                                <rect key="frame" x="16" y="679" width="361" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız.">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="cCJ-rT-Nil" eventType="touchUpInside" id="5rD-ed-4Wo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xs2-8i-enW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ot0-ta-JTm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gve-4e-8ii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3550.3816793893129" y="-2494.3661971830988"/>
+        </scene>
+        <!--MindfulnessVC-->
+        <scene sceneID="vid-f9-Ite">
+            <objects>
+                <viewController storyboardIdentifier="MindfulnessVC" id="5JJ-uO-Dln" customClass="MindfulnessVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jrZ-OM-NE0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYn-Lf-vql">
+                                <rect key="frame" x="16" y="20" width="361" height="592"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="592" id="8ix-jh-h4V"/>
+                                </constraints>
+                                <string key="text">Mindfulness meditasyonu, dikkatinizi şimdiki an'a odaklamayı ve sadece o anın farkındalığına varmayı amaçlayan bir meditasyon türüdür. İşte basit bir mindfulness meditasyonu yapmak için adımlar:
+1. Doğru bir pozisyon alın: Rahat bir pozisyonda oturun veya yatın. Sırtınız dik, omuzlarınız rahat ve gözleriniz kapalı olsun.
+2. Nefesinize odaklanın: Nefes alışverişinizi fark edin ve nefeslerinizi yavaşça ve derinlemesine alın. Burundan nefes alıp ağızdan verin. Nefes alıp verirken, bedeninizi rahatlattığınızı hissedin.
+3. Zihninizi odaklayın: Dikkatinizi nefes alışverişinize odaklayın. Nefes alıp verirken, düşüncelerinize izin vermeyin. Sadece farkındalığınızı nefesinize getirin.
+4. Duygularınıza farkındalıkla yaklaşın: Düşüncelerinizi gözlemledikten sonra, duygu ve hislerinizi fark etmeye çalışın. Olumlu veya olumsuz olabilirler, ama onları sadece gözlemleyin ve üzerlerinde düşünmeyin.
+5. Şimdiki an'a odaklanın: Şu anın farkındalığına varın. Bedeninizde hissettiğiniz hisleri ve nefesinizi fark edin. Gözlerinizi kapalı tutarak, duymaya çalışın ve yavaşça hissetmeye çalışın.
+6. Meditasyon süresini belirleyin: İlk başta, kısa bir süre boyunca meditasyon yapmaya başlayın, örneğin 5-10 dakika. Sonra süreyi yavaş yavaş artırın.
+7. Meditasyonu bitirin: Meditasyon süreniz bittiğinde, yavaşça gözlerinizi açın ve kendinizi meditasyonun etkisine bırakın.
+Mindfulness meditasyonu yaparken, dikkatinizi nefesinize, duygu ve hislerinize ve şimdiki an'a odaklanın. Başka bir şey düşündüğünüzde, sadece farkındalığınızı nefesinize, duygularınıza veya şimdiki an'a geri getirin. Bu, stresi azaltmanıza, zihni sakinleştirmenize ve kendinizi daha iyi hissetmenize yardımcı olabilir.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnJ-xi-0sk">
+                                <rect key="frame" x="16" y="620" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="5JJ-uO-Dln" eventType="touchUpInside" id="Y9e-au-bFb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IEi-Zn-L51"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qYn-Lf-vql" firstAttribute="leading" secondItem="jrZ-OM-NE0" secondAttribute="leadingMargin" id="8em-4a-qIK"/>
+                            <constraint firstItem="qYn-Lf-vql" firstAttribute="trailing" secondItem="MnJ-xi-0sk" secondAttribute="trailing" id="L7Y-pc-zmh"/>
+                            <constraint firstItem="qYn-Lf-vql" firstAttribute="trailing" secondItem="jrZ-OM-NE0" secondAttribute="trailingMargin" id="TMo-8m-oue"/>
+                            <constraint firstItem="MnJ-xi-0sk" firstAttribute="top" secondItem="qYn-Lf-vql" secondAttribute="bottom" constant="8" symbolic="YES" id="Yma-TZ-VY8"/>
+                            <constraint firstItem="qYn-Lf-vql" firstAttribute="top" secondItem="jrZ-OM-NE0" secondAttribute="top" constant="20" symbolic="YES" id="Yp5-0b-Nx0"/>
+                            <constraint firstItem="qYn-Lf-vql" firstAttribute="leading" secondItem="MnJ-xi-0sk" secondAttribute="leading" id="iYF-BH-04X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqo-ab-uzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7484.7328244274804" y="-1644.3661971830986"/>
+        </scene>
+        <!--TransandantalVC-->
+        <scene sceneID="Oov-wF-CrL">
+            <objects>
+                <viewController storyboardIdentifier="TransandantalVC" id="kYr-MU-ct0" customClass="TransandantalVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7n-uM-seC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtg-3T-VuR">
+                                <rect key="frame" x="16" y="20" width="361" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Transandantal meditasyon; dikkat dağıtıcı düşüncelerden kaçınmak, rahatlamak ve an içinde farkındalık durumunu yaratmak için kullanılan bir tekniktir. Yogi Maharishi Mahesh, transandantal meditasyonu Hindistan'ın eski Vedik geleneğinden yola çıkarak yaratmıştır. Bu meditasyon tekniği zaman içinde tüm dünyaya yayılarak pek çok insan tarafından uygulanmaya başlamıştır.
+
+Transandantal meditasyon yapanlar, bu ritüel sırasında sıradan düşünme sürecini aşarak saf bir bilinç hâline ulaşabilir. Böylece meditasyon yapan kişi dingin ve rahat bir düzen içine geçebilir. Zihinsel sınırların ortadan kalkmasına yardımcı olan transandal meditasyon stres ve anksiyete gibi sorunların yarattığı etkileri hafifletmek konusunda yardımcı olur.
+
+Transandantal meditasyonu en doğru şekilde uygulamak için bir profesyonelden yardım almak önemlidir. Belirli nefes teknikleri, mantra ve rahatlama pratikleri sayesinde düşünce hızını yavaşlatabilirsiniz. Pratiği düzenli olarak tekrarladıkça meditasyon konusunda derinleşebilir ve daha hızlı bir şekilde konsantrasyon sağlayabilirsiniz.
+
+Transandantal meditasyon başlı başına bir sağlık uygulaması değildir. Ancak yapılan araştırmalar stresten kaynaklanan rahatsızlıkların çözümünde bu meditasyon desteğinin yardımcı olabileceğini işaret eder. Stres seviyesinin düzenlenmesine katkı sağlayan pratik ile yaşam kalitesi dengelenebilir ve özgüveniniz artabilir.
+
+Mantra, transandantal meditasyon sırasında dikkati nazikçe toparlamak için kullanılan sesli uyarılar bütünüdür. Geleneksel olarak sıklıkla kullanılan mantralar olsa da, kişiye özel olarak seçilenler ile daha hızlı bir şekilde ilerleme kaydedebilirsiniz. Mantralar genellikle anlamsız olan seslerdir. Anlamlı kelimeler sizi zihin düzeyinde tutabilir ve meditasyonunun derinine inmenizi engelleyebilir.
+
+Transandantal meditasyonda sıklıkla başvurulan titreşim türleri arasında “Om” sesi yer alır. Titreşimi sayesinde bu ses, aklın sessiz ve mutlu seviyesine ulaşmasına katkı sağlayabilir. Bu mantra sayesinde zihin anda kaldığı ve kendini daha huzurlu hissettiği bir seviyeye ulaşabilir. Mantra kullanımı, zihin için yaratılan bir girdabın başlangıcı gibidir.
+
+Mantra, diğer meditasyon türlerinde olduğu gibi zihin için bir odak işlevi görmez. Sadece dikkatin hassas bir şekilde üzerinde toplandığı bir araç görevi görür. Mantra, transandantal meditasyon sırasında zihnin giderek daha ince bir düşünme seviyesine yerleşmesine yardımcı olur. En sonunda mantranın kendisi aşılır ve zihin sessizliğe yerleşir.
+
+Mantralar kişiye özel olarak bulunabilecekleri gibi, senelerdir kullanılan klasikleşmiş transandantal meditasyon mantraları da vardır. Bu pratiğe başlarken kendi mantranızı bulmak için bir eğitmenden destek alabilirsiniz. İlk olarak geleneksel mantraları deneyerek, bu titreşim ve seslerin üzerinizde yarattığı etkiye odaklanabilirsiniz. Uzun senelerdir kullanılan mantralar şu şekilde sıralanabilir:
+
+ 
+
+●     Aum ya da Om: Om, evrenin tınısı olarak kabul edilen bir titreşimdir. Orijinal titreşim yaşam döngüsünü, doğum ve ölümü temsil eder.
+
+●     Om Namah Shivaya: Bu mantrada yer alan “Om” harici beş hece sırasıyla dünyanın beş unsurunu sembolize eder. "Na", dünyayı; "Ma", suyu; "Si", ateşi; “Va”, havayı; “Ya” gökyüzünü temsil eder.
+
+●     Aham-Prema: Bu mantrayı söyleyerek zihninizi ilahi sevgiye yerleştirebilirsiniz. Kabul, saflık, uyum, hayranlık, takdir, şükran, bağışlama, sevgi ve ahenk bu mantra içine gizlenen anlamlar içindedir.
+
+●     Om Mani Padme Hum: Açıcı ses olarak “Om”u kullandıktan sonra peşi sıra gelen diğer heceler şunları sembolize eder: "Ma", sizi fiziksel dünyadan arındırır. "Ni" tutku ve arzudan kurtarır. "Pad" cehalet ve önyargıdan uzaklaştırır. “Me", sahiplenme tutkunuzu törpüler. "Hum" ise sizi nefretten kurtarır.
+ 
+Transandantal meditasyon yapmadan önce çevrenizi ve kendinizi hazırlamak önemlidir. İlk olarak meditasyon yapacağınız alanın huzurlu ve sakin olmasına özen göstermeniz gerekir. İsterseniz ışıkları kısabilir, mum ya da dekoratif objelerle çevrenizi daha davetkâr bir görünüme kavuşturabilirsiniz.
+
+Meditasyon sırasında herhangi bir şeyin dikkatinizi dağıtmamasından emin olmak önemlidir. Bu sebeple, pratiğe başlamadan önce kişisel temizliği sağlamak gerekir. Ferah ve hijyenik bir beden, meditasyonun daha rahat ilerlemesine fayda sağlayabilir. Bu konuda Dove Go Fresh serisini kullanarak hem detaylı hijyen sağlayabilir hem de ferah kokular ile dikkatinizi toplayabilirsiniz.
+
+Transandantal meditasyonu doğru bir şekilde gerçekleştirebilmek için bir yogiden destek almak önemlidir. Eğer evde tek başınıza bu pratiği edinmek isterseniz şu adımları izleyerek zaman içinde meditasyon yeteneğinizi geliştirebilirsiniz:
+
+●     Ayaklar yerde ve eller kucağınızda olacak şekilde rahat bir sandalyede oturarak başlamanız gerekir. Sıkışmaması için bacakları ve kolları çaprazlamak tavsiye edilmez.
+
+●     Gözlerinizi kapatarak vücudun gevşemesi için birkaç derin nefes alabilirsiniz.
+
+●     Zihninizde size uygun olan bir mantrayı tekrarlayabilirsiniz.
+
+●     Aklınıza başka bir düşünce takılırsa bunu fark ederek sakince mantranıza geri dönebilirsiniz.
+
+●     Meditasyonu tamamladıktan sonra, kendinizi dünyaya döndürmek için el ve ayak parmaklarınızı hareket ettirmeye başlayabilirsiniz.
+
+●     Son olarak gözlerinizi açarak kendinizi hazır hissedene kadar sakince oturabilirsiniz.
+
+Transandantal meditasyon etkili yöntemler arasında yer alır. Meditasyona başlamadan önce Dove Cream Bar Fresh Touch kullanarak cildinizi rahatlatabilirsiniz. Bu pratiği günlük hayatınızda tekrarlamaya başladıkça daha stressiz ve huzurlu bir hayata adım atabilirsiniz. 
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="634-ea-6Dh">
+                                <rect key="frame" x="16" y="667" width="361" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="kYr-MU-ct0" eventType="touchUpInside" id="xUs-cU-ndQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jkb-J6-eAk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M67-fT-4Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6718.320610687023" y="-2437.323943661972"/>
+        </scene>
+        <!--Nidra YogaVC-->
+        <scene sceneID="XHL-xZ-KeK">
+            <objects>
+                <viewController storyboardIdentifier="NidraYogaVC" id="fWK-xj-aFc" customClass="NidraYogaVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5aP-p7-SRc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-y1-15b">
+                                <rect key="frame" x="16" y="20" width="361" height="630"/>
+                                <color key="backgroundColor" red="0.19709684750000001" green="0.47339201460000002" blue="0.9138126566" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="630" id="t5x-mA-bfi"/>
+                                </constraints>
+                                <string key="text">Nidra yoga (yoga nidra), yoga geleneğinde yer alan bir tür meditasyondur. "Nidra" Sanskritçe bir kelime olup "uyku" anlamına gelir ancak burada amaç, uykunun kendisi değil, uykudaki gibi derin bir gevşeme ve dinlenme halidir.Nidra yogası (yoga nidra), rahat bir pozisyonda yapılan bir meditasyon şeklidir. Aşağıdaki adımları takip ederek Nidra yogası yapabilirsiniz:                                                                                  1. Rahat bir pozisyon alın: Nidra yoga yapmak için rahat bir yatış pozisyonu alın. Sırt üstü yatın ve başınızı yastığa yerleştirin. Ayaklarınızın ve ellerinizin serbest olması ve rahat bir şekilde yanınıza düşmesi idealdir.
+2. Derin nefes alın ve bırakın: Bedeninizi rahatlatmak için 2-3 kez derin nefes alın ve bırakın.
+3. Kas gruplarını sıkın ve gevşetin: Vücudunuzun her bir bölgesindeki kas gruplarını sırayla sıkın ve gevşetin. Ayak parmaklarınızdan başlayarak tüm bedeninizi geçin. Bu sıkma ve gevşetme işlemini yaparken, kaslarınızın gerildiğini ve gevşediğini hissedin.
+4. Odak noktanızı belirleyin: Zihninizi sakinleştirmek için bir odak noktası belirleyin. Bu, nefes alışverişleri, bir mantranın tekrarı, bir görüntü veya bir ses olabilir.
+5. Zihninizi farkındalıkla taramaya başlayın: Zihninizi farkındalıkla taramaya başlayın. Zihninizde geçen düşünceleri gözlemleyin, ancak onlara takılmayın veya onlarla etkileşime geçmeyin. Sadece gözlemleyin ve geçmişe odaklanmadan şimdiki anın farkındalığını koruyun.
+6. Derin bir gevşeme haline girmeye devam edin: Derin bir gevşeme haline girmeye devam edin. Bu sırada, bedeninizdeki hisleri, duyguları ve duyuları fark edin. Kendinizi bir çeşit uyku-halinde gibi hissetmeye başlayabilirsiniz.
+7. Meditasyon süreniz dolunca, yavaş yavaş geri dönün: Derin nefes alın ve bırakın. Bedeninizin her bir bölgesindeki kas gruplarını sırayla sıkın ve gevşetin. Son olarak, gözlerinizi açın ve yavaşça kalkın.
+Nidra yoga pratiği, genellikle 20-30 dakika sürer ve günde bir kez yapılması tavsiye edilir.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8c-b3-SnG">
+                                <rect key="frame" x="16" y="658" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="fWK-xj-aFc" eventType="touchUpInside" id="lgb-af-XVt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dFA-8T-hQb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g8c-b3-SnG" firstAttribute="top" secondItem="ehU-y1-15b" secondAttribute="bottom" constant="8" symbolic="YES" id="1yh-NZ-yBG"/>
+                            <constraint firstItem="ehU-y1-15b" firstAttribute="trailing" secondItem="5aP-p7-SRc" secondAttribute="trailingMargin" id="DJk-Qt-9mv"/>
+                            <constraint firstItem="ehU-y1-15b" firstAttribute="leading" secondItem="g8c-b3-SnG" secondAttribute="leading" id="MgV-ll-8I8"/>
+                            <constraint firstItem="ehU-y1-15b" firstAttribute="leading" secondItem="5aP-p7-SRc" secondAttribute="leadingMargin" id="dJF-WL-C74"/>
+                            <constraint firstItem="ehU-y1-15b" firstAttribute="trailing" secondItem="g8c-b3-SnG" secondAttribute="trailing" id="lqr-n6-Bpf"/>
+                            <constraint firstItem="ehU-y1-15b" firstAttribute="top" secondItem="5aP-p7-SRc" secondAttribute="top" constant="20" symbolic="YES" id="r49-8F-Beo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTK-dG-AFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5791.6030534351139" y="-887.32394366197184"/>
+        </scene>
+        <!--Loving KidnessVC-->
+        <scene sceneID="k3j-L0-bwp">
+            <objects>
+                <viewController storyboardIdentifier="LovingKidnessVC" id="GGn-AC-uWo" customClass="LovingKidnessVC" customModule="Cravin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQ6-tE-6X6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wve-1Y-GZX">
+                                <rect key="frame" x="16" y="20" width="361" height="622"/>
+                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="622" id="AQY-g5-nYU"/>
+                                </constraints>
+                                <string key="text">Loving-Kindness meditasyonu, başkalarına karşı sevgi ve merhamet hislerini artırmak için yapılan bir meditasyon tekniğidir. İşte Loving-Kindness meditasyonu yapmak için adımlar:
+1. Doğru bir pozisyon alın: Rahat bir pozisyonda oturun veya yatın. Sırtınız dik, omuzlarınız rahat ve gözleriniz kapalı olsun.
+2. Zihninizi hazırlayın: Meditasyona başlamadan önce, zihninizin sakinleşmesine yardımcı olmak için birkaç dakika boyunca derin nefes alın ve gevşeyin.
+3. Kendinize bir nesne seçin: Meditasyona başlamadan önce kendinize sevdiğiniz bir nesne, hayvan veya kişi düşünün. Bu size sevgi ve mutluluk hissi veren bir şey olmalıdır.
+4. Loving-Kindness meditasyonu yapın: Kendinize ve başkalarına karşı sevgi dolu hisler geliştirmek için kendinize şu cümleleri söyleyin:
+* "Kendime sevgi dolu hisler gönderiyorum."
+* "Ailem, arkadaşlarım ve sevdiklerim için sevgi dolu hisler gönderiyorum."
+* "Nötr olan insanlar ve tanımadığım insanlar için sevgi dolu hisler gönderiyorum."
+* "Zorbalık yapanlar veya bana zarar verenler için bile sevgi dolu hisler gönderiyorum."
+Bu cümleleri söylerken, her bir kişi veya grup için sevgi, mutluluk ve merhamet hisleri ile dolu olduğunuzu hayal edin.
+5. Meditasyon sürenizi ayarlayın: Loving-Kindness meditasyonunu yapmak için önerilen süre, günde 20-30 dakikadır. Bu süreyi zamanla artırabilirsiniz.
+6. Meditasyonunuzu sonlandırın: Meditasyonunuzu sonlandırmak için, gözlerinizi yavaşça açın ve birkaç dakika boyunca oturun. Meditasyonunuzun sakin ve rahatlatıcı bir his bırakması için birkaç dakika daha oturabilirsiniz.
+Not: Loving-Kindness meditasyonu, herhangi bir din veya inanca bağlı olmadığından herkes tarafından yapılabilecek bir meditasyon tekniğidir.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-dK-1IK">
+                                <rect key="frame" x="16" y="650" width="361" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Öğretici video için tıklayınız">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlButonuTiklandi:" destination="GGn-AC-uWo" eventType="touchUpInside" id="Jc7-8k-6VF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="62d-Ms-mbY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wve-1Y-GZX" firstAttribute="leading" secondItem="WUM-dK-1IK" secondAttribute="leading" id="8RH-2x-QG5"/>
+                            <constraint firstItem="WUM-dK-1IK" firstAttribute="top" secondItem="Wve-1Y-GZX" secondAttribute="bottom" constant="8" symbolic="YES" id="B3o-Ud-dx8"/>
+                            <constraint firstItem="Wve-1Y-GZX" firstAttribute="top" secondItem="mQ6-tE-6X6" secondAttribute="top" constant="20" symbolic="YES" id="CQU-Cu-gqM"/>
+                            <constraint firstItem="Wve-1Y-GZX" firstAttribute="leading" secondItem="mQ6-tE-6X6" secondAttribute="leadingMargin" id="HvC-1y-mBa"/>
+                            <constraint firstItem="Wve-1Y-GZX" firstAttribute="trailing" secondItem="WUM-dK-1IK" secondAttribute="trailing" id="fIN-h8-5gT"/>
+                            <constraint firstItem="Wve-1Y-GZX" firstAttribute="trailing" secondItem="mQ6-tE-6X6" secondAttribute="trailingMargin" id="znz-TR-pdX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bM-aV-sLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6626.7175572519081" y="-1241.549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="564" height="1003"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
+        <image name="beats.headphones" catalog="system" width="128" height="121"/>
+        <image name="brain" catalog="system" width="128" height="107"/>
+        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="115"/>
+        <image name="dream_TradingCard" width="960" height="1568"/>
+        <image name="fairylands" width="2318" height="1078"/>
+        <image name="focus" width="564" height="933"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="nature" width="563" height="330"/>
+        <image name="peacful" width="564" height="705"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="piano" width="423" height="752"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="questionmark" catalog="system" width="94" height="128"/>
+        <image name="rain" width="564" height="1220"/>
+        <image name="silence" width="564" height="846"/>
+        <image name="sleep" width="564" height="872"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="videoprojector" catalog="system" width="128" height="60"/>
+        <image name="waterfall" width="563" height="823"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

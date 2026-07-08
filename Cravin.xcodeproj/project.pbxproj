@@ -9,14 +9,134 @@
 /* Begin PBXBuildFile section */
 		8F43EBE229DF6CD900890425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE129DF6CD900890425 /* AppDelegate.swift */; };
 		8F43EBE429DF6CD900890425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE329DF6CD900890425 /* SceneDelegate.swift */; };
-		8F43EBE629DF6CD900890425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBE529DF6CD900890425 /* ViewController.swift */; };
 		8F43EBE929DF6CD900890425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBE729DF6CD900890425 /* Main.storyboard */; };
 		8F43EBEC29DF6CD900890425 /* Cravin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBEA29DF6CD900890425 /* Cravin.xcdatamodeld */; };
 		8F43EBEE29DF6CDB00890425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBED29DF6CDB00890425 /* Assets.xcassets */; };
-		8F43EBF129DF6CDB00890425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */; };
 		8F43EBFC29DF6CDC00890425 /* CravinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EBFB29DF6CDC00890425 /* CravinTests.swift */; };
 		8F43EC0629DF6CDC00890425 /* CravinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC0529DF6CDC00890425 /* CravinUITests.swift */; };
 		8F43EC0829DF6CDC00890425 /* CravinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */; };
+		8F43EC2A29DF6D6E00890425 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1529DF6D2400890425 /* DataModel.swift */; };
+		8F43EC2B29DF6D6E00890425 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1529DF6D2400890425 /* DataModel.swift */; };
+		8F43EC2C29DF6D6E00890425 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1529DF6D2400890425 /* DataModel.swift */; };
+		8F43EC2D29DF6D6E00890425 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1629DF6D2400890425 /* Podcast.swift */; };
+		8F43EC2E29DF6D6E00890425 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1629DF6D2400890425 /* Podcast.swift */; };
+		8F43EC2F29DF6D6E00890425 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1629DF6D2400890425 /* Podcast.swift */; };
+		8F43EC3029DF6D6E00890425 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1729DF6D2400890425 /* Specification.swift */; };
+		8F43EC3129DF6D6E00890425 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1729DF6D2400890425 /* Specification.swift */; };
+		8F43EC3229DF6D6E00890425 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC1729DF6D2400890425 /* Specification.swift */; };
+		8F43EC3329DF6D6E00890425 /* yagmur.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1A29DF6D6900890425 /* yagmur.mp4 */; };
+		8F43EC3429DF6D6E00890425 /* yagmur.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1A29DF6D6900890425 /* yagmur.mp4 */; };
+		8F43EC3529DF6D6E00890425 /* yagmur.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1A29DF6D6900890425 /* yagmur.mp4 */; };
+		8F43EC3629DF6D6E00890425 /* silence.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1B29DF6D6900890425 /* silence.mp4 */; };
+		8F43EC3729DF6D6E00890425 /* silence.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1B29DF6D6900890425 /* silence.mp4 */; };
+		8F43EC3829DF6D6E00890425 /* silence.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1B29DF6D6900890425 /* silence.mp4 */; };
+		8F43EC3929DF6D6E00890425 /* waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1C29DF6D6900890425 /* waterfall.mp4 */; };
+		8F43EC3A29DF6D6E00890425 /* waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1C29DF6D6900890425 /* waterfall.mp4 */; };
+		8F43EC3B29DF6D6E00890425 /* waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1C29DF6D6900890425 /* waterfall.mp4 */; };
+		8F43EC3C29DF6D6E00890425 /* nature.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1D29DF6D6900890425 /* nature.mp4 */; };
+		8F43EC3D29DF6D6E00890425 /* nature.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1D29DF6D6900890425 /* nature.mp4 */; };
+		8F43EC3E29DF6D6E00890425 /* nature.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1D29DF6D6900890425 /* nature.mp4 */; };
+		8F43EC3F29DF6D6E00890425 /* fairylands.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1E29DF6D6900890425 /* fairylands.mp4 */; };
+		8F43EC4029DF6D6E00890425 /* fairylands.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1E29DF6D6900890425 /* fairylands.mp4 */; };
+		8F43EC4129DF6D6E00890425 /* fairylands.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1E29DF6D6900890425 /* fairylands.mp4 */; };
+		8F43EC4229DF6D6E00890425 /* piano.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1F29DF6D6900890425 /* piano.mp4 */; };
+		8F43EC4329DF6D6E00890425 /* piano.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1F29DF6D6900890425 /* piano.mp4 */; };
+		8F43EC4429DF6D6E00890425 /* piano.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC1F29DF6D6900890425 /* piano.mp4 */; };
+		8F43EC4529DF6D6E00890425 /* focus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2029DF6D6900890425 /* focus.mp4 */; };
+		8F43EC4629DF6D6E00890425 /* focus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2029DF6D6900890425 /* focus.mp4 */; };
+		8F43EC4729DF6D6E00890425 /* focus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2029DF6D6900890425 /* focus.mp4 */; };
+		8F43EC4829DF6D6E00890425 /* sleep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2129DF6D6900890425 /* sleep.mp4 */; };
+		8F43EC4929DF6D6E00890425 /* sleep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2129DF6D6900890425 /* sleep.mp4 */; };
+		8F43EC4A29DF6D6E00890425 /* sleep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2129DF6D6900890425 /* sleep.mp4 */; };
+		8F43EC4B29DF6D6E00890425 /* peacful.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2229DF6D6900890425 /* peacful.mp4 */; };
+		8F43EC4C29DF6D6E00890425 /* peacful.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2229DF6D6900890425 /* peacful.mp4 */; };
+		8F43EC4D29DF6D6E00890425 /* peacful.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2229DF6D6900890425 /* peacful.mp4 */; };
+		8F43EC4E29DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2429DF6D6E00890425 /* zihniyandirmak.mp3 */; };
+		8F43EC4F29DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2429DF6D6E00890425 /* zihniyandirmak.mp3 */; };
+		8F43EC5029DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2429DF6D6E00890425 /* zihniyandirmak.mp3 */; };
+		8F43EC5129DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2529DF6D6E00890425 /* kazanmayaBaslamak.mp3 */; };
+		8F43EC5229DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2529DF6D6E00890425 /* kazanmayaBaslamak.mp3 */; };
+		8F43EC5329DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2529DF6D6E00890425 /* kazanmayaBaslamak.mp3 */; };
+		8F43EC5429DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2629DF6D6E00890425 /* sadece21gunDene.mp3 */; };
+		8F43EC5529DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2629DF6D6E00890425 /* sadece21gunDene.mp3 */; };
+		8F43EC5629DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2629DF6D6E00890425 /* sadece21gunDene.mp3 */; };
+		8F43EC5729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 */; };
+		8F43EC5829DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 */; };
+		8F43EC5929DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 */; };
+		8F43EC5A29DF6D6E00890425 /* bahaneYok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2829DF6D6E00890425 /* bahaneYok.mp3 */; };
+		8F43EC5B29DF6D6E00890425 /* bahaneYok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2829DF6D6E00890425 /* bahaneYok.mp3 */; };
+		8F43EC5C29DF6D6E00890425 /* bahaneYok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2829DF6D6E00890425 /* bahaneYok.mp3 */; };
+		8F43EC5D29DF6D6E00890425 /* travma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2929DF6D6E00890425 /* travma.mp3 */; };
+		8F43EC5E29DF6D6E00890425 /* travma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2929DF6D6E00890425 /* travma.mp3 */; };
+		8F43EC5F29DF6D6E00890425 /* travma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F43EC2929DF6D6E00890425 /* travma.mp3 */; };
+		8F43EC7829DF6DAF00890425 /* AppInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6229DF6DAB00890425 /* AppInfoVC.swift */; };
+		8F43EC7929DF6DAF00890425 /* AppInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6229DF6DAB00890425 /* AppInfoVC.swift */; };
+		8F43EC7A29DF6DAF00890425 /* AppInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6229DF6DAB00890425 /* AppInfoVC.swift */; };
+		8F43EC7B29DF6DAF00890425 /* YogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6329DF6DAC00890425 /* YogaVC.swift */; };
+		8F43EC7C29DF6DAF00890425 /* YogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6329DF6DAC00890425 /* YogaVC.swift */; };
+		8F43EC7D29DF6DAF00890425 /* YogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6329DF6DAC00890425 /* YogaVC.swift */; };
+		8F43EC7E29DF6DAF00890425 /* MantraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6429DF6DAC00890425 /* MantraVC.swift */; };
+		8F43EC7F29DF6DAF00890425 /* MantraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6429DF6DAC00890425 /* MantraVC.swift */; };
+		8F43EC8029DF6DAF00890425 /* MantraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6429DF6DAC00890425 /* MantraVC.swift */; };
+		8F43EC8129DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6529DF6DAC00890425 /* PodcastPlayerVC.swift */; };
+		8F43EC8229DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6529DF6DAC00890425 /* PodcastPlayerVC.swift */; };
+		8F43EC8329DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6529DF6DAC00890425 /* PodcastPlayerVC.swift */; };
+		8F43EC8429DF6DAF00890425 /* NedirDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6629DF6DAC00890425 /* NedirDetayVC.swift */; };
+		8F43EC8529DF6DAF00890425 /* NedirDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6629DF6DAC00890425 /* NedirDetayVC.swift */; };
+		8F43EC8629DF6DAF00890425 /* NedirDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6629DF6DAC00890425 /* NedirDetayVC.swift */; };
+		8F43EC8729DF6DAF00890425 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6729DF6DAC00890425 /* CustomTableViewCell.swift */; };
+		8F43EC8829DF6DAF00890425 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6729DF6DAC00890425 /* CustomTableViewCell.swift */; };
+		8F43EC8929DF6DAF00890425 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6729DF6DAC00890425 /* CustomTableViewCell.swift */; };
+		8F43EC8A29DF6DAF00890425 /* MeditasyonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6829DF6DAD00890425 /* MeditasyonVC.swift */; };
+		8F43EC8B29DF6DAF00890425 /* MeditasyonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6829DF6DAD00890425 /* MeditasyonVC.swift */; };
+		8F43EC8C29DF6DAF00890425 /* MeditasyonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6829DF6DAD00890425 /* MeditasyonVC.swift */; };
+		8F43EC8D29DF6DAF00890425 /* PodcastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6929DF6DAD00890425 /* PodcastVC.swift */; };
+		8F43EC8E29DF6DAF00890425 /* PodcastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6929DF6DAD00890425 /* PodcastVC.swift */; };
+		8F43EC8F29DF6DAF00890425 /* PodcastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6929DF6DAD00890425 /* PodcastVC.swift */; };
+		8F43EC9029DF6DAF00890425 /* SakinAlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6A29DF6DAD00890425 /* SakinAlanVC.swift */; };
+		8F43EC9129DF6DAF00890425 /* SakinAlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6A29DF6DAD00890425 /* SakinAlanVC.swift */; };
+		8F43EC9229DF6DAF00890425 /* SakinAlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6A29DF6DAD00890425 /* SakinAlanVC.swift */; };
+		8F43EC9329DF6DAF00890425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6B29DF6DAD00890425 /* ViewController.swift */; };
+		8F43EC9429DF6DAF00890425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6B29DF6DAD00890425 /* ViewController.swift */; };
+		8F43EC9529DF6DAF00890425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6B29DF6DAD00890425 /* ViewController.swift */; };
+		8F43EC9629DF6DAF00890425 /* ZenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6C29DF6DAD00890425 /* ZenVC.swift */; };
+		8F43EC9729DF6DAF00890425 /* ZenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6C29DF6DAD00890425 /* ZenVC.swift */; };
+		8F43EC9829DF6DAF00890425 /* ZenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6C29DF6DAD00890425 /* ZenVC.swift */; };
+		8F43EC9929DF6DAF00890425 /* MindfulnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6D29DF6DAD00890425 /* MindfulnessVC.swift */; };
+		8F43EC9A29DF6DAF00890425 /* MindfulnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6D29DF6DAD00890425 /* MindfulnessVC.swift */; };
+		8F43EC9B29DF6DAF00890425 /* MindfulnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6D29DF6DAD00890425 /* MindfulnessVC.swift */; };
+		8F43EC9C29DF6DAF00890425 /* ChakraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6E29DF6DAE00890425 /* ChakraVC.swift */; };
+		8F43EC9D29DF6DAF00890425 /* ChakraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6E29DF6DAE00890425 /* ChakraVC.swift */; };
+		8F43EC9E29DF6DAF00890425 /* ChakraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6E29DF6DAE00890425 /* ChakraVC.swift */; };
+		8F43EC9F29DF6DAF00890425 /* NedirVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6F29DF6DAE00890425 /* NedirVC.swift */; };
+		8F43ECA029DF6DAF00890425 /* NedirVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6F29DF6DAE00890425 /* NedirVC.swift */; };
+		8F43ECA129DF6DAF00890425 /* NedirVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC6F29DF6DAE00890425 /* NedirVC.swift */; };
+		8F43ECA229DF6DAF00890425 /* VipassanaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7029DF6DAE00890425 /* VipassanaVC.swift */; };
+		8F43ECA329DF6DAF00890425 /* VipassanaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7029DF6DAE00890425 /* VipassanaVC.swift */; };
+		8F43ECA429DF6DAF00890425 /* VipassanaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7029DF6DAE00890425 /* VipassanaVC.swift */; };
+		8F43ECA529DF6DAF00890425 /* OlumlamaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7129DF6DAE00890425 /* OlumlamaVC.swift */; };
+		8F43ECA629DF6DAF00890425 /* OlumlamaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7129DF6DAE00890425 /* OlumlamaVC.swift */; };
+		8F43ECA729DF6DAF00890425 /* OlumlamaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7129DF6DAE00890425 /* OlumlamaVC.swift */; };
+		8F43ECA829DF6DAF00890425 /* DusunSeliVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7229DF6DAE00890425 /* DusunSeliVC.swift */; };
+		8F43ECA929DF6DAF00890425 /* DusunSeliVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7229DF6DAE00890425 /* DusunSeliVC.swift */; };
+		8F43ECAA29DF6DAF00890425 /* DusunSeliVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7229DF6DAE00890425 /* DusunSeliVC.swift */; };
+		8F43ECAB29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7329DF6DAF00890425 /* LovingKidnessVC.swift */; };
+		8F43ECAC29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7329DF6DAF00890425 /* LovingKidnessVC.swift */; };
+		8F43ECAD29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7329DF6DAF00890425 /* LovingKidnessVC.swift */; };
+		8F43ECAE29DF6DAF00890425 /* NidraYogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7429DF6DAF00890425 /* NidraYogaVC.swift */; };
+		8F43ECAF29DF6DAF00890425 /* NidraYogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7429DF6DAF00890425 /* NidraYogaVC.swift */; };
+		8F43ECB029DF6DAF00890425 /* NidraYogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7429DF6DAF00890425 /* NidraYogaVC.swift */; };
+		8F43ECB129DF6DAF00890425 /* ContainerTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7529DF6DAF00890425 /* ContainerTabController.swift */; };
+		8F43ECB229DF6DAF00890425 /* ContainerTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7529DF6DAF00890425 /* ContainerTabController.swift */; };
+		8F43ECB329DF6DAF00890425 /* ContainerTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7529DF6DAF00890425 /* ContainerTabController.swift */; };
+		8F43ECB429DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7629DF6DAF00890425 /* NefesFarkindaligiVC.swift */; };
+		8F43ECB529DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7629DF6DAF00890425 /* NefesFarkindaligiVC.swift */; };
+		8F43ECB629DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7629DF6DAF00890425 /* NefesFarkindaligiVC.swift */; };
+		8F43ECB729DF6DAF00890425 /* TransandantalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7729DF6DAF00890425 /* TransandantalVC.swift */; };
+		8F43ECB829DF6DAF00890425 /* TransandantalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7729DF6DAF00890425 /* TransandantalVC.swift */; };
+		8F43ECB929DF6DAF00890425 /* TransandantalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43EC7729DF6DAF00890425 /* TransandantalVC.swift */; };
+		8F8C52C329E5E8B600366634 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C52C229E5E8B600366634 /* Launch Screen.storyboard */; };
+		8F8C52C529E6002B00366634 /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C52C429E6002B00366634 /* PodcastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +160,57 @@
 		8F43EBDE29DF6CD900890425 /* Cravin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cravin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F43EBE129DF6CD900890425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F43EBE329DF6CD900890425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F43EBE529DF6CD900890425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F43EBE829DF6CD900890425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F43EBEB29DF6CD900890425 /* Cravin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cravin.xcdatamodel; sourceTree = "<group>"; };
 		8F43EBED29DF6CDB00890425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F43EBF029DF6CDB00890425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F43EBF229DF6CDB00890425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F43EBF729DF6CDC00890425 /* CravinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CravinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F43EBFB29DF6CDC00890425 /* CravinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinTests.swift; sourceTree = "<group>"; };
 		8F43EC0129DF6CDC00890425 /* CravinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CravinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F43EC0529DF6CDC00890425 /* CravinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinUITests.swift; sourceTree = "<group>"; };
 		8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CravinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F43EC1529DF6D2400890425 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8F43EC1629DF6D2400890425 /* Podcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		8F43EC1729DF6D2400890425 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		8F43EC1A29DF6D6900890425 /* yagmur.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yagmur.mp4; sourceTree = "<group>"; };
+		8F43EC1B29DF6D6900890425 /* silence.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = silence.mp4; sourceTree = "<group>"; };
+		8F43EC1C29DF6D6900890425 /* waterfall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = waterfall.mp4; sourceTree = "<group>"; };
+		8F43EC1D29DF6D6900890425 /* nature.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nature.mp4; sourceTree = "<group>"; };
+		8F43EC1E29DF6D6900890425 /* fairylands.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fairylands.mp4; sourceTree = "<group>"; };
+		8F43EC1F29DF6D6900890425 /* piano.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = piano.mp4; sourceTree = "<group>"; };
+		8F43EC2029DF6D6900890425 /* focus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = focus.mp4; sourceTree = "<group>"; };
+		8F43EC2129DF6D6900890425 /* sleep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sleep.mp4; sourceTree = "<group>"; };
+		8F43EC2229DF6D6900890425 /* peacful.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = peacful.mp4; sourceTree = "<group>"; };
+		8F43EC2429DF6D6E00890425 /* zihniyandirmak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zihniyandirmak.mp3; sourceTree = "<group>"; };
+		8F43EC2529DF6D6E00890425 /* kazanmayaBaslamak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kazanmayaBaslamak.mp3; sourceTree = "<group>"; };
+		8F43EC2629DF6D6E00890425 /* sadece21gunDene.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadece21gunDene.mp3; sourceTree = "<group>"; };
+		8F43EC2729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hucreleriniyilesmesi.mp3; sourceTree = "<group>"; };
+		8F43EC2829DF6D6E00890425 /* bahaneYok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bahaneYok.mp3; sourceTree = "<group>"; };
+		8F43EC2929DF6D6E00890425 /* travma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = travma.mp3; sourceTree = "<group>"; };
+		8F43EC6229DF6DAB00890425 /* AppInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoVC.swift; sourceTree = "<group>"; };
+		8F43EC6329DF6DAC00890425 /* YogaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YogaVC.swift; sourceTree = "<group>"; };
+		8F43EC6429DF6DAC00890425 /* MantraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantraVC.swift; sourceTree = "<group>"; };
+		8F43EC6529DF6DAC00890425 /* PodcastPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastPlayerVC.swift; sourceTree = "<group>"; };
+		8F43EC6629DF6DAC00890425 /* NedirDetayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NedirDetayVC.swift; sourceTree = "<group>"; };
+		8F43EC6729DF6DAC00890425 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		8F43EC6829DF6DAD00890425 /* MeditasyonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditasyonVC.swift; sourceTree = "<group>"; };
+		8F43EC6929DF6DAD00890425 /* PodcastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastVC.swift; sourceTree = "<group>"; };
+		8F43EC6A29DF6DAD00890425 /* SakinAlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SakinAlanVC.swift; sourceTree = "<group>"; };
+		8F43EC6B29DF6DAD00890425 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F43EC6C29DF6DAD00890425 /* ZenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZenVC.swift; sourceTree = "<group>"; };
+		8F43EC6D29DF6DAD00890425 /* MindfulnessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindfulnessVC.swift; sourceTree = "<group>"; };
+		8F43EC6E29DF6DAE00890425 /* ChakraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChakraVC.swift; sourceTree = "<group>"; };
+		8F43EC6F29DF6DAE00890425 /* NedirVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NedirVC.swift; sourceTree = "<group>"; };
+		8F43EC7029DF6DAE00890425 /* VipassanaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VipassanaVC.swift; sourceTree = "<group>"; };
+		8F43EC7129DF6DAE00890425 /* OlumlamaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlumlamaVC.swift; sourceTree = "<group>"; };
+		8F43EC7229DF6DAE00890425 /* DusunSeliVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DusunSeliVC.swift; sourceTree = "<group>"; };
+		8F43EC7329DF6DAF00890425 /* LovingKidnessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovingKidnessVC.swift; sourceTree = "<group>"; };
+		8F43EC7429DF6DAF00890425 /* NidraYogaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NidraYogaVC.swift; sourceTree = "<group>"; };
+		8F43EC7529DF6DAF00890425 /* ContainerTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerTabController.swift; sourceTree = "<group>"; };
+		8F43EC7629DF6DAF00890425 /* NefesFarkindaligiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NefesFarkindaligiVC.swift; sourceTree = "<group>"; };
+		8F43EC7729DF6DAF00890425 /* TransandantalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransandantalVC.swift; sourceTree = "<group>"; };
+		8F8C52C229E5E8B600366634 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8F8C52C429E6002B00366634 /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +261,13 @@
 		8F43EBE029DF6CD900890425 /* Cravin */ = {
 			isa = PBXGroup;
 			children = (
-				8F43EBE129DF6CD900890425 /* AppDelegate.swift */,
-				8F43EBE329DF6CD900890425 /* SceneDelegate.swift */,
-				8F43EBE529DF6CD900890425 /* ViewController.swift */,
-				8F43EBE729DF6CD900890425 /* Main.storyboard */,
+				8F43EC6129DF6D8200890425 /* Controller */,
+				8F43EC6029DF6D7700890425 /* View */,
+				8F43EC1429DF6D2400890425 /* Model */,
+				8F43EC1829DF6D4A00890425 /* Delegate */,
+				8F43EC2329DF6D6E00890425 /* Podcast */,
+				8F43EC1929DF6D6900890425 /* SakinAlanVideo */,
 				8F43EBED29DF6CDB00890425 /* Assets.xcassets */,
-				8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */,
 				8F43EBF229DF6CDB00890425 /* Info.plist */,
 				8F43EBEA29DF6CD900890425 /* Cravin.xcdatamodeld */,
 			);
@@ -128,6 +289,93 @@
 				8F43EC0729DF6CDC00890425 /* CravinUITestsLaunchTests.swift */,
 			);
 			path = CravinUITests;
+			sourceTree = "<group>";
+		};
+		8F43EC1429DF6D2400890425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EC1529DF6D2400890425 /* DataModel.swift */,
+				8F43EC1629DF6D2400890425 /* Podcast.swift */,
+				8F43EC1729DF6D2400890425 /* Specification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F43EC1829DF6D4A00890425 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EBE129DF6CD900890425 /* AppDelegate.swift */,
+				8F43EBE329DF6CD900890425 /* SceneDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		8F43EC1929DF6D6900890425 /* SakinAlanVideo */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EC1A29DF6D6900890425 /* yagmur.mp4 */,
+				8F43EC1B29DF6D6900890425 /* silence.mp4 */,
+				8F43EC1C29DF6D6900890425 /* waterfall.mp4 */,
+				8F43EC1D29DF6D6900890425 /* nature.mp4 */,
+				8F43EC1E29DF6D6900890425 /* fairylands.mp4 */,
+				8F43EC1F29DF6D6900890425 /* piano.mp4 */,
+				8F43EC2029DF6D6900890425 /* focus.mp4 */,
+				8F43EC2129DF6D6900890425 /* sleep.mp4 */,
+				8F43EC2229DF6D6900890425 /* peacful.mp4 */,
+			);
+			path = SakinAlanVideo;
+			sourceTree = "<group>";
+		};
+		8F43EC2329DF6D6E00890425 /* Podcast */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EC2429DF6D6E00890425 /* zihniyandirmak.mp3 */,
+				8F43EC2529DF6D6E00890425 /* kazanmayaBaslamak.mp3 */,
+				8F43EC2629DF6D6E00890425 /* sadece21gunDene.mp3 */,
+				8F43EC2729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 */,
+				8F43EC2829DF6D6E00890425 /* bahaneYok.mp3 */,
+				8F43EC2929DF6D6E00890425 /* travma.mp3 */,
+			);
+			path = Podcast;
+			sourceTree = "<group>";
+		};
+		8F43EC6029DF6D7700890425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EBE729DF6CD900890425 /* Main.storyboard */,
+				8F8C52C229E5E8B600366634 /* Launch Screen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F43EC6129DF6D8200890425 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F43EC6229DF6DAB00890425 /* AppInfoVC.swift */,
+				8F43EC6E29DF6DAE00890425 /* ChakraVC.swift */,
+				8F43EC7529DF6DAF00890425 /* ContainerTabController.swift */,
+				8F43EC6729DF6DAC00890425 /* CustomTableViewCell.swift */,
+				8F43EC7229DF6DAE00890425 /* DusunSeliVC.swift */,
+				8F43EC7329DF6DAF00890425 /* LovingKidnessVC.swift */,
+				8F43EC6429DF6DAC00890425 /* MantraVC.swift */,
+				8F43EC6829DF6DAD00890425 /* MeditasyonVC.swift */,
+				8F43EC6D29DF6DAD00890425 /* MindfulnessVC.swift */,
+				8F43EC6629DF6DAC00890425 /* NedirDetayVC.swift */,
+				8F43EC6F29DF6DAE00890425 /* NedirVC.swift */,
+				8F43EC7629DF6DAF00890425 /* NefesFarkindaligiVC.swift */,
+				8F43EC7429DF6DAF00890425 /* NidraYogaVC.swift */,
+				8F43EC7129DF6DAE00890425 /* OlumlamaVC.swift */,
+				8F43EC6529DF6DAC00890425 /* PodcastPlayerVC.swift */,
+				8F43EC6929DF6DAD00890425 /* PodcastVC.swift */,
+				8F43EC6A29DF6DAD00890425 /* SakinAlanVC.swift */,
+				8F43EC7729DF6DAF00890425 /* TransandantalVC.swift */,
+				8F43EC6B29DF6DAD00890425 /* ViewController.swift */,
+				8F43EC7029DF6DAE00890425 /* VipassanaVC.swift */,
+				8F43EC6329DF6DAC00890425 /* YogaVC.swift */,
+				8F43EC6C29DF6DAD00890425 /* ZenVC.swift */,
+				8F8C52C429E6002B00366634 /* PodcastTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +482,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F43EBF129DF6CDB00890425 /* LaunchScreen.storyboard in Resources */,
+				8F43EC5A29DF6D6E00890425 /* bahaneYok.mp3 in Resources */,
 				8F43EBEE29DF6CDB00890425 /* Assets.xcassets in Resources */,
+				8F43EC3F29DF6D6E00890425 /* fairylands.mp4 in Resources */,
+				8F43EC3929DF6D6E00890425 /* waterfall.mp4 in Resources */,
+				8F43EC5729DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */,
+				8F43EC5429DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */,
+				8F43EC5D29DF6D6E00890425 /* travma.mp3 in Resources */,
+				8F43EC4529DF6D6E00890425 /* focus.mp4 in Resources */,
+				8F43EC3329DF6D6E00890425 /* yagmur.mp4 in Resources */,
+				8F43EC4B29DF6D6E00890425 /* peacful.mp4 in Resources */,
+				8F43EC4229DF6D6E00890425 /* piano.mp4 in Resources */,
 				8F43EBE929DF6CD900890425 /* Main.storyboard in Resources */,
+				8F8C52C329E5E8B600366634 /* Launch Screen.storyboard in Resources */,
+				8F43EC3629DF6D6E00890425 /* silence.mp4 in Resources */,
+				8F43EC3C29DF6D6E00890425 /* nature.mp4 in Resources */,
+				8F43EC4E29DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */,
+				8F43EC5129DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */,
+				8F43EC4829DF6D6E00890425 /* sleep.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +507,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F43EC3D29DF6D6E00890425 /* nature.mp4 in Resources */,
+				8F43EC4929DF6D6E00890425 /* sleep.mp4 in Resources */,
+				8F43EC3429DF6D6E00890425 /* yagmur.mp4 in Resources */,
+				8F43EC5229DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */,
+				8F43EC4029DF6D6E00890425 /* fairylands.mp4 in Resources */,
+				8F43EC4F29DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */,
+				8F43EC5829DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */,
+				8F43EC5E29DF6D6E00890425 /* travma.mp3 in Resources */,
+				8F43EC3729DF6D6E00890425 /* silence.mp4 in Resources */,
+				8F43EC5529DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */,
+				8F43EC4629DF6D6E00890425 /* focus.mp4 in Resources */,
+				8F43EC4C29DF6D6E00890425 /* peacful.mp4 in Resources */,
+				8F43EC3A29DF6D6E00890425 /* waterfall.mp4 in Resources */,
+				8F43EC4329DF6D6E00890425 /* piano.mp4 in Resources */,
+				8F43EC5B29DF6D6E00890425 /* bahaneYok.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +529,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F43EC3E29DF6D6E00890425 /* nature.mp4 in Resources */,
+				8F43EC4A29DF6D6E00890425 /* sleep.mp4 in Resources */,
+				8F43EC3529DF6D6E00890425 /* yagmur.mp4 in Resources */,
+				8F43EC5329DF6D6E00890425 /* kazanmayaBaslamak.mp3 in Resources */,
+				8F43EC4129DF6D6E00890425 /* fairylands.mp4 in Resources */,
+				8F43EC5029DF6D6E00890425 /* zihniyandirmak.mp3 in Resources */,
+				8F43EC5929DF6D6E00890425 /* hucreleriniyilesmesi.mp3 in Resources */,
+				8F43EC5F29DF6D6E00890425 /* travma.mp3 in Resources */,
+				8F43EC3829DF6D6E00890425 /* silence.mp4 in Resources */,
+				8F43EC5629DF6D6E00890425 /* sadece21gunDene.mp3 in Resources */,
+				8F43EC4729DF6D6E00890425 /* focus.mp4 in Resources */,
+				8F43EC4D29DF6D6E00890425 /* peacful.mp4 in Resources */,
+				8F43EC3B29DF6D6E00890425 /* waterfall.mp4 in Resources */,
+				8F43EC4429DF6D6E00890425 /* piano.mp4 in Resources */,
+				8F43EC5C29DF6D6E00890425 /* bahaneYok.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +554,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F43EBE629DF6CD900890425 /* ViewController.swift in Sources */,
+				8F43EC7829DF6DAF00890425 /* AppInfoVC.swift in Sources */,
+				8F43ECB129DF6DAF00890425 /* ContainerTabController.swift in Sources */,
+				8F43EC2A29DF6D6E00890425 /* DataModel.swift in Sources */,
+				8F43EC8A29DF6DAF00890425 /* MeditasyonVC.swift in Sources */,
+				8F43EC9C29DF6DAF00890425 /* ChakraVC.swift in Sources */,
+				8F43EC9F29DF6DAF00890425 /* NedirVC.swift in Sources */,
+				8F43EC8D29DF6DAF00890425 /* PodcastVC.swift in Sources */,
+				8F43ECAE29DF6DAF00890425 /* NidraYogaVC.swift in Sources */,
+				8F43EC2D29DF6D6E00890425 /* Podcast.swift in Sources */,
+				8F43EC9929DF6DAF00890425 /* MindfulnessVC.swift in Sources */,
+				8F43ECA829DF6DAF00890425 /* DusunSeliVC.swift in Sources */,
 				8F43EBE229DF6CD900890425 /* AppDelegate.swift in Sources */,
+				8F43EC9029DF6DAF00890425 /* SakinAlanVC.swift in Sources */,
+				8F8C52C529E6002B00366634 /* PodcastTableViewCell.swift in Sources */,
+				8F43EC9629DF6DAF00890425 /* ZenVC.swift in Sources */,
+				8F43EC7B29DF6DAF00890425 /* YogaVC.swift in Sources */,
+				8F43EC9329DF6DAF00890425 /* ViewController.swift in Sources */,
+				8F43EC3029DF6D6E00890425 /* Specification.swift in Sources */,
+				8F43EC8429DF6DAF00890425 /* NedirDetayVC.swift in Sources */,
+				8F43ECB429DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */,
+				8F43ECB729DF6DAF00890425 /* TransandantalVC.swift in Sources */,
+				8F43EC8129DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */,
 				8F43EBEC29DF6CD900890425 /* Cravin.xcdatamodeld in Sources */,
 				8F43EBE429DF6CD900890425 /* SceneDelegate.swift in Sources */,
+				8F43EC7E29DF6DAF00890425 /* MantraVC.swift in Sources */,
+				8F43ECA529DF6DAF00890425 /* OlumlamaVC.swift in Sources */,
+				8F43ECAB29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */,
+				8F43EC8729DF6DAF00890425 /* CustomTableViewCell.swift in Sources */,
+				8F43ECA229DF6DAF00890425 /* VipassanaVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +590,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F43ECA329DF6DAF00890425 /* VipassanaVC.swift in Sources */,
+				8F43EC7929DF6DAF00890425 /* AppInfoVC.swift in Sources */,
+				8F43EC8E29DF6DAF00890425 /* PodcastVC.swift in Sources */,
+				8F43ECAC29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */,
+				8F43EC9729DF6DAF00890425 /* ZenVC.swift in Sources */,
+				8F43ECAF29DF6DAF00890425 /* NidraYogaVC.swift in Sources */,
 				8F43EBFC29DF6CDC00890425 /* CravinTests.swift in Sources */,
+				8F43EC7C29DF6DAF00890425 /* YogaVC.swift in Sources */,
+				8F43ECA929DF6DAF00890425 /* DusunSeliVC.swift in Sources */,
+				8F43EC9429DF6DAF00890425 /* ViewController.swift in Sources */,
+				8F43EC2B29DF6D6E00890425 /* DataModel.swift in Sources */,
+				8F43EC8529DF6DAF00890425 /* NedirDetayVC.swift in Sources */,
+				8F43ECB829DF6DAF00890425 /* TransandantalVC.swift in Sources */,
+				8F43ECB529DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */,
+				8F43EC8229DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */,
+				8F43ECB229DF6DAF00890425 /* ContainerTabController.swift in Sources */,
+				8F43EC9129DF6DAF00890425 /* SakinAlanVC.swift in Sources */,
+				8F43EC8829DF6DAF00890425 /* CustomTableViewCell.swift in Sources */,
+				8F43ECA629DF6DAF00890425 /* OlumlamaVC.swift in Sources */,
+				8F43EC2E29DF6D6E00890425 /* Podcast.swift in Sources */,
+				8F43EC7F29DF6DAF00890425 /* MantraVC.swift in Sources */,
+				8F43EC3129DF6D6E00890425 /* Specification.swift in Sources */,
+				8F43EC8B29DF6DAF00890425 /* MeditasyonVC.swift in Sources */,
+				8F43EC9A29DF6DAF00890425 /* MindfulnessVC.swift in Sources */,
+				8F43EC9D29DF6DAF00890425 /* ChakraVC.swift in Sources */,
+				8F43ECA029DF6DAF00890425 /* NedirVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +623,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F43EC9529DF6DAF00890425 /* ViewController.swift in Sources */,
+				8F43ECAA29DF6DAF00890425 /* DusunSeliVC.swift in Sources */,
 				8F43EC0629DF6CDC00890425 /* CravinUITests.swift in Sources */,
+				8F43ECB329DF6DAF00890425 /* ContainerTabController.swift in Sources */,
+				8F43EC3229DF6D6E00890425 /* Specification.swift in Sources */,
+				8F43ECAD29DF6DAF00890425 /* LovingKidnessVC.swift in Sources */,
+				8F43EC9B29DF6DAF00890425 /* MindfulnessVC.swift in Sources */,
+				8F43ECB629DF6DAF00890425 /* NefesFarkindaligiVC.swift in Sources */,
+				8F43EC8929DF6DAF00890425 /* CustomTableViewCell.swift in Sources */,
+				8F43EC7A29DF6DAF00890425 /* AppInfoVC.swift in Sources */,
 				8F43EC0829DF6CDC00890425 /* CravinUITestsLaunchTests.swift in Sources */,
+				8F43ECB929DF6DAF00890425 /* TransandantalVC.swift in Sources */,
+				8F43EC9229DF6DAF00890425 /* SakinAlanVC.swift in Sources */,
+				8F43EC8F29DF6DAF00890425 /* PodcastVC.swift in Sources */,
+				8F43EC2F29DF6D6E00890425 /* Podcast.swift in Sources */,
+				8F43EC8629DF6DAF00890425 /* NedirDetayVC.swift in Sources */,
+				8F43ECA429DF6DAF00890425 /* VipassanaVC.swift in Sources */,
+				8F43EC8029DF6DAF00890425 /* MantraVC.swift in Sources */,
+				8F43EC8329DF6DAF00890425 /* PodcastPlayerVC.swift in Sources */,
+				8F43EC9829DF6DAF00890425 /* ZenVC.swift in Sources */,
+				8F43EC9E29DF6DAF00890425 /* ChakraVC.swift in Sources */,
+				8F43EC2C29DF6D6E00890425 /* DataModel.swift in Sources */,
+				8F43ECB029DF6DAF00890425 /* NidraYogaVC.swift in Sources */,
+				8F43ECA729DF6DAF00890425 /* OlumlamaVC.swift in Sources */,
+				8F43EC7D29DF6DAF00890425 /* YogaVC.swift in Sources */,
+				8F43ECA129DF6DAF00890425 /* NedirVC.swift in Sources */,
+				8F43EC8C29DF6DAF00890425 /* MeditasyonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +675,6 @@
 				8F43EBE829DF6CD900890425 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8F43EBEF29DF6CDB00890425 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F43EBF029DF6CDB00890425 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -444,10 +804,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cravin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,10 +831,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cravin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
